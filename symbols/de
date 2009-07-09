@@ -324,12 +324,12 @@ xkb_symbols "neo_base" {
     // --------------------------------------------------------------
     key <AB01> { [ udiaeresis,              Udiaeresis,              percent,                 NoSymbol,                Home,                    Home,                    union,                   NoSymbol                 ] };
     key <AB02> { [ odiaeresis,              Odiaeresis,              asciicircum,             U03F5,                   Prior,                   Prior,                   intersection,            NoSymbol                 ] };
-    key <AB03> { [ adiaeresis,              Adiaeresis,              minus,                   Greek_eta,               Next,                    Next,                    U2135,                   NoSymbol                 ] };
-    key <AB04> { [ p,                       P,                       question,                Greek_pi,                End,                     End,                     Greek_PI,                NoSymbol                 ] };
+    key <AB03> { [ adiaeresis,              Adiaeresis,              question,                   Greek_eta,               Next,                    Next,                    U2135,                   NoSymbol                 ] };
+    key <AB04> { [ p,                       P,                       minus,                Greek_pi,                End,                     End,                     Greek_PI,                NoSymbol                 ] };
     key <AB05> { [ z,                       Z,                       bar,                     Greek_zeta,              Undo,                    Undo,                    U2124,                   NoSymbol                 ] };
 
-    key <AB06> { [ b,                       B,                       exclam,                  Greek_beta,              colon,                   NoSymbol,                U21D0,                   NoSymbol                 ] };
-    key <AB07> { [ m,                       M,                       plus,                    Greek_mu,                KP_1,                    NoSymbol,                ifonlyif,                NoSymbol                 ] };
+    key <AB06> { [ b,                       B,                       plus,                  Greek_beta,              colon,                   NoSymbol,                U21D0,                   NoSymbol                 ] };
+    key <AB07> { [ m,                       M,                       exclam,                    Greek_mu,                KP_1,                    NoSymbol,                ifonlyif,                NoSymbol                 ] };
     key.type[Group1] = "EIGHT_LEVEL_NEO_LOCKS";
     key <AB08> { [ asterisk,                endash,                  ampersand,               Greek_rho,               KP_2,                    NoSymbol,                U21D2,                   NoSymbol                 ] };
     key.type[Group1] = "EIGHT_LEVEL_NEO_LOCKS_QUARTERALPHABETIC";
