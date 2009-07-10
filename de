@@ -254,8 +254,8 @@ xkb_symbols "neo" {
     // --------------------------------------------------------------
     // Definition of the so called Neo-Mod3
     key.type[Group1]="THREE_LEVEL";
-    key <AC11> { [ ISO_Level3_Shift, ISO_Level3_Shift,  Caps_Lock ] };
-    key <CAPS> { [ ISO_Level3_Shift, ISO_Level3_Shift,  Caps_Lock ] };
+    key <AC11> { [ ISO_Level3_Shift, ISO_Level3_Shift,  NoSymbol ] };
+    key <CAPS> { [ ISO_Level3_Shift, ISO_Level3_Shift,  NoSymbol ] };
 
     // Definition of the so called Neo-Mod4
     key.type[Group1]="ONE_LEVEL";
