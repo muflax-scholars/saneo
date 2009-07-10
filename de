@@ -291,7 +291,6 @@ xkb_symbols "neo" {
 
     // Top row
     // --------------------------------------------------------------
-    key.type[Group1] = "EIGHT_LEVEL_NEO_LOCKS_QUARTERALPHABETIC";
     key <AD01> { [ x,                       X,                       asciitilde,              Greek_xi,                Escape,                  Escape,                  Greek_XI] };
     key <AD02> { [ v,                       V,                       dollar,                  NoSymbol,                BackSpace,               BackSpace,               radical] };
     key <AD03> { [ l,                       L,                       bracketleft,             Greek_lambda,            Return,                  Return,                  Greek_LAMBDA] };
