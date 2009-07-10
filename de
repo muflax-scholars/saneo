@@ -212,23 +212,23 @@ xkb_symbols "sundeadkeys" {
 };
 
 
-// German NEO-Layout Version 2
+// German NEO-Layout Version 2.0rc1 (rev: 1331)
+// with added sanity
 // adopted 2004 by Hanno Behrens <Hanno.Behrens@gmx.de>
 // inspired by Dvorak/de-ergo  http://www.goebel-consult.de/de-ergo/
 //
 // Authors: 
-//      Stephan Hilb <stephan at ehilb dot de>
+//      muflax <mail@muflax.com>
 //      <lucky at zankt dot net>
 //      Benjamin Kellermann <Benjamin dot Kellermann at gmx dot Germany>
 //      Erik Streb <mail at erikstreb dot de>
-//        and many other contributors
+//        and many other contributers
 //
 //      http://www.neo-layout.org
-//
-// $Revision$, $Date$
+
 
 partial alphanumeric_keys modifier_keys keypad_keys
-xkb_symbols "neo_base" {
+xkb_symbols "neo" {
 
     name[Group1]= "Germany - Neo 2";
 
@@ -237,32 +237,38 @@ xkb_symbols "neo_base" {
     // Ebene 1: normal
     // Ebene 2: Shift
     // Ebene 3: Mod3
-    // Ebene 4: Mod4 (for marking something use Shift + Mod4)
-    // Ebene 5: Shift + Mod3
-    // Ebene 6: Mod3 + Mod4
-    // Compose (not a level): Mod3 + Tab
-    // Feststelltaste (Capslock): Shift + Shift
-    // Mod4-Lock: Mod4 + Mod4
-    // Mod4-Lock: Shift + Mod3 + Tab
-
-    // Legend
-    // ===============
+    // Ebene 4: Mod4 (for marking something use Shift+Mod4)
+    // Ebene 5: Shift+Mod3
+    // Ebene 6: Mod3+Mod4 (in this order)
+    // Compose (not a level): Mod3+Tab
+    // Feststelltaste (Capslock): Mod3+Mod3
+    //
     // Levels in Xkbmap jargon to be found here in the definitions. 
-    // These are the levels used, and Xorg's translations:
+    // These are the levels used, and Xorg's translations with type="EIGHT_LEVEL":
     // --------------------------------------------------------------
-    // Xorg:       Level1                   Level2                   Level3                   Level4                   Level5                   Level6                   Level7                   Level8                   
-    // Neo:        Ebene1                   Ebene2                   Ebene3                   Ebene5                   Ebene4                   ???                      Ebene6                   ???                      
-    // Keys (Neo): None                     Shift                    Mod3                     Mod3 + Shift             Mod4                     Mod4 + Shift             Mod3 + Mod4              Mod3 + Mod4 + Shift      
+    //   Modifier:        None    Shift   Mod3    Shift+Mod3  Mod4    Shift+Mod4    Mod3+Mod4
+    //   Xorg calls it:   Level1  Level2  Level3  Level4      Level5  Level6        Level7
+    //   Neo calls it:    Ebene1  Ebene2  Ebene3  Ebene5      Ebene4  Ebene4+Shift  Ebene6
 
+    // Modifier definitions
+    // --------------------------------------------------------------
+    // Definition of the so called Neo-Mod3
+    key.type[Group1]="THREE_LEVEL";
+    key <AC11> { [ ISO_Level3_Shift, ISO_Level3_Shift,  Caps_Lock ] };
+    key <CAPS> { [ ISO_Level3_Shift, ISO_Level3_Shift,  Caps_Lock ] };
 
-    // Alphanumeric-keys
-    // ===============
-    key.type[Group1] = "EIGHT_LEVEL_NEO_LOCKS";
+    // Definition of the so called Neo-Mod4
+    key.type[Group1]="ONE_LEVEL";
+    key <LSGT> { [ ISO_Level5_Shift ]};
+    key <RALT> { [ ISO_Level5_Shift ]};
+    modifier_map Mod3 { <LSGT>, <RALT> };
+    // Attention: ^^^ This is a X server variable, not the Neo-Mod3.
+
+    key.type[Group1]="EIGHT_LEVEL_ALPHABETIC" ;
 
     // Tab as Multi_key (Compose)
     // --------------------------------------------------------------
-    key  <TAB> { [ Tab,                     ISO_Left_Tab,            Multi_key,               ISO_Level5_Lock,         NoSymbol,                NoSymbol,                NoSymbol,                ISO_Level5_Lock          ] };
-
+    key  <TAB> { [ Tab, ISO_Left_Tab, Multi_key ] };
 
     // Number row
     // --------------------------------------------------------------
@@ -300,12 +306,8 @@ xkb_symbols "neo_base" {
 
     key <AD11> { [ ssharp,                  U1E9E,                   grave,                   Greek_finalsmallsigma,   U2212,                   NoSymbol,                jot,                     NoSymbol                 ] };
 
-    key.type[Group1] = "EIGHT_LEVEL_NEO_LOCKS";
-    key <AD12> { [ dead_acute,              dead_cedilla,            dead_stroke,             dead_psili,              dead_doubleacute,        NoSymbol,                dead_abovedot,           NoSymbol                 ] };
-
     // Middle row
     // --------------------------------------------------------------
-    key.type[Group1] = "EIGHT_LEVEL_NEO_LOCKS_QUARTERALPHABETIC";
     key <AC01> { [ u,                       U,                       comma,                   NoSymbol,                Left,                    Left,                    includedin,              NoSymbol                 ] };
     key <AC02> { [ i,                       I,                       braceleft,               Greek_iota,              Up,                      Up,                      integral,                NoSymbol                 ] };
     key <AC03> { [ a,                       A,                       backslash,               Greek_alpha,             Down,                    Down,                    U2200,                   NoSymbol                 ] };
@@ -328,18 +330,17 @@ xkb_symbols "neo_base" {
     key <AB04> { [ p,                       P,                       minus,                Greek_pi,                End,                     End,                     Greek_PI,                NoSymbol                 ] };
     key <AB05> { [ z,                       Z,                       bar,                     Greek_zeta,              Undo,                    Undo,                    U2124,                   NoSymbol                 ] };
 
-    key <AB06> { [ b,                       B,                       plus,                  Greek_beta,              colon,                   NoSymbol,                U21D0,                   NoSymbol                 ] };
+    key <AB06> { [ b,                       B,                       plus,                  Greek_beta,              KP_0,                   NoSymbol,                U21D0,                   NoSymbol                 ] };
     key <AB07> { [ m,                       M,                       exclam,                    Greek_mu,                KP_1,                    NoSymbol,                ifonlyif,                NoSymbol                 ] };
-    key.type[Group1] = "EIGHT_LEVEL_NEO_LOCKS";
     key <AB08> { [ asterisk,                endash,                  ampersand,               Greek_rho,               KP_2,                    NoSymbol,                U21D2,                   NoSymbol                 ] };
-    key.type[Group1] = "EIGHT_LEVEL_NEO_LOCKS_QUARTERALPHABETIC";
     key <AB09> { [ j,                       J,                       numbersign,              U03D1,                   KP_3,                    NoSymbol,                Greek_THETA,             NoSymbol                 ] };
     key <AB10> { [ y,                       Y,                       colon,                   Greek_theta,             semicolon,               NoSymbol,                U21A6,                   NoSymbol                 ] };
-    key.type[Group1] = "EIGHT_LEVEL_NEO_LOCKS";
+    // --------------------------------------------------------------                                                      
+    key <SPCE> { [ space,       space,                  space,                  nobreakspace,       0,              NoSymbol,    U202F             ] };
 
     // Space key
     // --------------------------------------------------------------
-    key <SPCE> { [ space,                   space,                   space,                   nobreakspace,            KP_0,                    NoSymbol,                U202F,                   NoSymbol                 ] };
+    key <SPCE> { [ space,                   space,                   space,                   nobreakspace,            space,                    NoSymbol,                U202F,                   NoSymbol                 ] };
                                   
 
     // Keypad-keys
@@ -381,16 +382,7 @@ xkb_symbols "neo_base" {
     key <KPDL> { [ KP_Separator,            KP_Decimal,              period,                  apostrophe,              KP_Delete,               KP_Delete,               quotedbl,                NoSymbol                 ] };
 };
 
-partial alphanumeric_keys modifier_keys keypad_keys
-xkb_symbols "neo" {
 
-    include "de(neo_base)"
-
-    include "shift(both_capslock)"
-    include "level3(caps_switch)"
-    include "level3(bksl_switch)"
-    include "level5(lsgt_switch_numlock)"
-    include "level5(ralt_switch_numlock)"
 };
 
 // Copied from macintosh_vndr/de
