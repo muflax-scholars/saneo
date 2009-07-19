@@ -1,0 +1,14 @@
+Layout:
+                 
+n: ~ [ ' < ! = > " ] | `
+o: ~ $ [ ' < = > " ] @ `
+   x v l c w k h g f q ß
+
+n:                       |
+o: , { \ ; (   ) _ / } .    変
+   u i a e o   s n r t d M3 換
+
+n:           @   $
+o:   % ^ ? - | + ! & # :
+     ü ö ä p z b m * j y
+
