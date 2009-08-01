@@ -8,11 +8,9 @@ use warnings;
 my %freq;
 
 while (<>) {
-    chomp;
-    my @chars = split //, $_;
-    $freq{$_}++ for @chars;
+    $freq{$_}++ for unpack "(A1)*", $_;
 }
 
-for (sort {$freq{$a} <=> $freq{$b}} keys %freq) {
+for (sort {$freq{$a} <=> $freq{$b}} grep {/[[:punct:]]/} keys %freq) {
     say "$_ ", $freq{$_};
 }
