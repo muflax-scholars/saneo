@@ -64,7 +64,7 @@ xkb_symbols "saneo" {
     key <AD09> { [ f,                       F,                       bracketright,            Greek_phi,               KP_9,                    NoSymbol,                Greek_PHI] };
     key <AD10> { [ q,                       Q,                       bar,                     U03D5,                   KP_Add,                  NoSymbol,                U211A] };
 
-    key <AD11> { [ ssharp,                  U1E9E,                   grave,                   Greek_finalsmallsigma,   U2212,                   NoSymbol,                jot] };
+    key <AD11> { [ NoSymbol,                NoSymbol,                grave,                   Greek_finalsmallsigma,   U2212,                   NoSymbol,                jot] };
 
     // middle row
     // ----------
@@ -80,23 +80,23 @@ xkb_symbols "saneo" {
     key <AC09> { [ t,                       T,                       braceright,              Greek_tau,               KP_6,                    NoSymbol,                partialderivative] };
     key <AC10> { [ d,                       D,                       period,                  Greek_delta,             KP_Separator,            NoSymbol,                Greek_DELTA] };
 
-    key <BKSL> { [ Henkan_Mode,             NoSymbol,                Nosymbol,                NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol] };
+    key <BKSL> { [ Kanji, NoSymbol,                Nosymbol,                NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol] };
 
     // bottom row
     // ----------
-    key <AB01> { [ udiaeresis,              Udiaeresis,              percent,                 NoSymbol,                Home,                    Home,                    union] };
-    key <AB02> { [ odiaeresis,              Odiaeresis,              asciicircum,             U03F5,                   Prior,                   Prior,                   intersection] };
-    key <AB03> { [ adiaeresis,              Adiaeresis,              question,                Greek_eta,               Next,                    Next,                    U2135] };
+    key <AB01> { [ Touroku,                 NoSymbol,                percent,                 NoSymbol,                Home,                    Home,                    union] };
+    key <AB02> { [ Hiragana,                Katakana,                asciicircum,             U03F5,                   Prior,                   Prior,                   intersection] };
+    key <AB03> { [ Hankaku,                 Zenkaku,                 question,                Greek_eta,               Next,                    Next,                    U2135] };
     key <AB04> { [ p,                       P,                       minus,                   Greek_pi,                End,                     End,                     Greek_PI] };
     key <AB05> { [ z,                       Z,                       at,                      Greek_zeta,              Undo,                    Undo,                    U2124] };
 
-    key <AB06> { [ b,                       B,                       plus,                    Greek_beta,              KP_0,                   NoSymbol,                U21D0] };
+    key <AB06> { [ b,                       B,                       plus,                    Greek_beta,              KP_0,                    NoSymbol,                U21D0] };
     key <AB07> { [ m,                       M,                       dollar,                  Greek_mu,                KP_1,                    NoSymbol,                ifonlyif] };
     key <AB08> { [ asterisk,                endash,                  ampersand,               Greek_rho,               KP_2,                    NoSymbol,                U21D2] };
     key <AB09> { [ j,                       J,                       numbersign,              U03D1,                   KP_3,                    NoSymbol,                Greek_THETA] };
     key <AB10> { [ y,                       Y,                       colon,                   Greek_theta,             semicolon,               NoSymbol,                U21A6] };
 
-    // Space key
+    // Space key                                                     
     // ---------
     key <SPCE> { [ space,                   space,                   space,                   nobreakspace,            space,                    NoSymbol,                U202F] };
 

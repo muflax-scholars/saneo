@@ -21,6 +21,6 @@ for (@ARGV) {
     }
 }
 
-for (sort {$freq{$a} <=> $freq{$b}} keys %freq) {
+for (sort {$freq{$b} <=> $freq{$a}} keys %freq) {
     printf "%s %0.3f\n", $_, $freq{$_};
 }
