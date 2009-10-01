@@ -80,6 +80,7 @@ xkb_symbols "saneo" {
     key <AC09> { [ t,                       T,                       braceright,              Greek_tau,               KP_6,                    NoSymbol,                partialderivative] };
     key <AC10> { [ d,                       D,                       period,                  Greek_delta,             KP_Separator,            NoSymbol,                Greek_DELTA] };
 
+    // the one next to return
     key <BKSL> { [ Muhenkan,                Muhenkan,                Nosymbol,                NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol] };
     key <MENU> { [ Kanji,                   Kanji] };
 
