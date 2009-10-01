@@ -84,9 +84,9 @@ xkb_symbols "saneo" {
 
     // bottom row
     // ----------
-    key <AB01> { [ Touroku,                 NoSymbol,                percent,                 NoSymbol,                Home,                    Home,                    union] };
-    key <AB02> { [ Hiragana_Katakana,       Zenkaku_Hankaku          asciicircum,             U03F5,                   Prior,                   Prior,                   intersection] };
-    key <AB03> { [ XF86AudioLowerVolume,    XF86AudioRaiseVolume,    question,                Greek_eta,               Next,                    Next,                    U2135] };
+    key <AB01> { [ XF86AudioLowerVolume,    XF86AudioRaiseVolume,    percent,                 NoSymbol,                Home,                    Home,                    union] };
+    key <AB02> { [ Hiragana_Katakana,       Zenkaku_Hankaku,         asciicircum,             U03F5,                   Prior,                   Prior,                   intersection] };
+    key <AB03> { [ Touroku,                 NoSymbol,                question,                Greek_eta,               Next,                    Next,                    U2135] };
     key <AB04> { [ p,                       P,                       minus,                   Greek_pi,                End,                     End,                     Greek_PI] };
     key <AB05> { [ z,                       Z,                       at,                      Greek_zeta,              Undo,                    Undo,                    U2124] };
 
