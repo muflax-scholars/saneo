@@ -80,14 +80,14 @@ xkb_symbols "saneo" {
     key <AC09> { [ t,                       T,                       braceright,              Greek_tau,               KP_6,                    NoSymbol,                partialderivative] };
     key <AC10> { [ d,                       D,                       period,                  Greek_delta,             KP_Separator,            NoSymbol,                Greek_DELTA] };
 
-    key <BKSL> { [ Muhenkan,                NoSymbol,                Nosymbol,                NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol] };
-    key <MENU> { [ Kanji, NoSymbol,                Nosymbol,                NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol] };
+    key <BKSL> { [ Muhenkan,                Muhenkan,                Nosymbol,                NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol] };
+    key <MENU> { [ Kanji,                   Kanji] };
 
     // bottom row
     // ----------
     key <AB01> { [ XF86AudioLowerVolume,    XF86AudioRaiseVolume,    percent,                 NoSymbol,                Home,                    Home,                    union] };
-    key <AB02> { [ Henkan,                  Kankaku,                 asciicircum,             U03F5,                   Prior,                   Prior,                   intersection] };
-    key <AB03> { [ Touroku,                 NoSymbol,                question,                Greek_eta,               Next,                    Next,                    U2135] };
+    key <AB02> { [ Touroku,                 Touroku,                 asciicircum,             U03F5,                   Prior,                   Prior,                   intersection] };
+    key <AB03> { [ Henkan,                  Henkan,                  question,                Greek_eta,               Next,                    Next,                    U2135] };
     key <AB04> { [ p,                       P,                       minus,                   Greek_pi,                End,                     End,                     Greek_PI] };
     key <AB05> { [ z,                       Z,                       at,                      Greek_zeta,              Undo,                    Undo,                    U2124] };
 
