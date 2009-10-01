@@ -81,6 +81,7 @@ xkb_symbols "saneo" {
     key <AC10> { [ d,                       D,                       period,                  Greek_delta,             KP_Separator,            NoSymbol,                Greek_DELTA] };
 
     key <BKSL> { [ Kanji, NoSymbol,                Nosymbol,                NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol] };
+    key <MENU> { [ Kanji, NoSymbol,                Nosymbol,                NoSymbol,                NoSymbol,                NoSymbol,                NoSymbol] };
 
     // bottom row
     // ----------
