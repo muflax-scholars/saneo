@@ -21,8 +21,8 @@ alt_is_meta
 #          shift   keycode  42 = Caps_Lock       
                    keycode  54 = Shift           
 #          shift   keycode  54 = Caps_Lock       
-                   keycode  58 = AltGr           
-#          altgr   keycode  58 = AltGr_Lock      
+                   keycode  40 = AltGr           
+#          altgr   keycode  40 = AltGr_Lock      
                    keycode  43 = AltGr           
 #          altgr   keycode  43 = AltGr_Lock      
                    keycode  86 = ShiftL          
@@ -223,7 +223,7 @@ alt_is_meta
 ! Row 2 (upper row)
 ! --------------------------------------------------------------------------
                    keycode  16 = x                     
-           altgr   keycode  16 = U+2026                
+           altgr   keycode  16 = asciitilde               
    shift   altgr   keycode  16 = U+03be                
            shiftl  keycode  16 = U+22EE                
    altgr   shiftl  keycode  16 = U+039e                
@@ -341,11 +341,11 @@ alt_is_meta
    shift   altgr   keycode  39 = U+03b4                
            shiftl  keycode  39 = U+002c                
    altgr   shiftl  keycode  39 = U+0394                
-                   keycode  40 = y                     
-           altgr   keycode  40 = at                    
-   shift   altgr   keycode  40 = U+03c5                
-           shiftl  keycode  40 = U+002e                
-   altgr   shiftl  keycode  40 = U+2207                
+!                   keycode  40 = y                     
+!           altgr   keycode  40 = at                    
+!   shift   altgr   keycode  40 = U+03c5                
+!           shiftl  keycode  40 = U+002e                
+!   altgr   shiftl  keycode  40 = U+2207                
 
 ! --------------------------------------------------------------------------
 ! Row 4 (lower row)
@@ -386,11 +386,11 @@ alt_is_meta
            shiftl  keycode  51 = KP_2                  
    shift   shiftl  keycode  51 = KP_2                  
    altgr   shiftl  keycode  51 = U+21D2                
-                   keycode  52 = period                U+2022                apostrophe            U+03D1                
+                   keycode  52 = j                     J                     apostrophe            U+03D1                
            shiftl  keycode  52 = KP_3                  
    shift   shiftl  keycode  52 = KP_3                  
    altgr   shiftl  keycode  52 = U+0398                
-                   keycode  53 = j                     
+                   keycode  53 = y                     
            altgr   keycode  53 = semicolon             
    shift   altgr   keycode  53 = U+03b8                
            shiftl  keycode  53 = semicolon             

@@ -11,6 +11,6 @@ while (<>) {
     $freq{$_}++ for unpack "(A1)*", $_;
 }
 
-for (sort {$freq{$a} <=> $freq{$b}} grep {/[[:punct:]]/} keys %freq) {
+for (sort {$freq{$a} <=> $freq{$b}} grep {/[[:ascii:]]/} keys %freq) {
     say "$_ ", $freq{$_};
 }
