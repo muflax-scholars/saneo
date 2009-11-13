@@ -15,7 +15,7 @@ xkb_symbols "saneo" {
     // --------------------
     // definition of Mod3
     key.type[Group1]="THREE_LEVEL";
-    key <AC11> { [ ISO_Level3_Shift, ISO_Level3_Shift,  bar ] };
+    key <AC11> { [ ISO_Level3_Shift, ISO_Level3_Shift,  NoSymbol ] };
     key <CAPS> { [ ISO_Level3_Shift, ISO_Level3_Shift,  NoSymbol ] };
 
     // definition of Mod4
@@ -100,7 +100,7 @@ xkb_symbols "saneo" {
 
     // Space key                                                     
     // ---------
-    key <SPCE> { [ space,                   space,                   space,                   nobreakspace,            space,                    NoSymbol,                U202F] };
+    key <SPCE> { [ space,                   space,                   bar,                     nobreakspace,            space,                    NoSymbol,                U202F] };
 
     // Keypad
     // ======
