@@ -87,7 +87,7 @@ xkb_symbols "saneo" {
     // bottom row
     // ----------
     key <AB01> { [ XF86AudioLowerVolume,    XF86AudioRaiseVolume,    percent,                 NoSymbol,                Home,                    Home,                    union] };
-    key <AB02> { [ Touroku,                 Touroku,                 asciicircum,             U03F5,                   Prior,                   Prior,                   intersection] };
+    key <AB02> { [ grave,                   Touroku,                 asciicircum,             U03F5,                   Prior,                   Prior,                   intersection] };
     key <AB03> { [ bar,                     at,                      question,                Greek_eta,               Next,                    Next,                    U2135] };
     key <AB04> { [ p,                       P,                       minus,                   Greek_pi,                End,                     End,                     Greek_PI] };
     key <AB05> { [ z,                       Z,                       at,                      Greek_zeta,              Undo,                    Undo,                    U2124] };
@@ -101,43 +101,5 @@ xkb_symbols "saneo" {
     // Space key                                                     
     // ---------
     key <SPCE> { [ space,                   space,                   space,                     nobreakspace,            space,                    NoSymbol,                U202F] };
-
-    // Keypad
-    // ======
-
-    // the former Numlock key:
-    key <NMLK> { [ Tab,           ISO_Left_Tab,   equal,        approxeq,     notequal,   NoSymbol,   identical ] };
-
-    // topmost row
-    // -----------
-    key <KPDV> { [ KP_Divide,     KP_Divide,      division,     U2223,        U2300,      NoSymbol,   U2044 ] };
-    key <KPMU> { [ KP_Multiply,   KP_Multiply,    U22C5,        multiply,     U2299,      NoSymbol,   U2297 ] };
-    key <KPSU> { [ KP_Subtract,   KP_Subtract,    U2212,        U2216,        U2296,      NoSymbol,   U2238 ] };
-
-    // top row
-    // -------
-    key  <KP7> { [ KP_7,          U2714,          U2195,        U226A,        KP_Home,    KP_Home,    upstile ] };
-    key  <KP8> { [ KP_8,          U2718,          uparrow,      intersection, KP_Up,      KP_Up,      U22C2   ] };
-    key  <KP9> { [ KP_9,          NoSymbol,       U20D7,        U226B,        KP_Prior,   KP_Prior,   U2309   ] };
-    key <KPAD> { [ KP_Add,        KP_Add,         plusminus,    U2213,        U2295,      NoSymbol,   U2214   ] };
-
-    // middle row
-    // ----------
-    key  <KP4> { [ KP_4,          club,           leftarrow,    includedin,   KP_Left,    KP_Left,    U2286 ] };
-    key  <KP5> { [ KP_5,          EuroSign,       brokenbar,    U22B6,        KP_Begin,   KP_Begin,   U22B7 ] };
-    key  <KP6> { [ KP_6,          NoSymbol,       rightarrow,   includes,     KP_Right,   KP_Right,   U2287 ] };
-
-    // bottom row
-    // ----------
-    key  <KP1> { [ KP_1,          diamond,        U2194,        lessthanequal,KP_End,     KP_End,     downstile ] };
-    key  <KP2> { [ KP_2,          heart,          downarrow,    union,        KP_Down,    KP_Down,    U22C3     ] };
-    key  <KP3> { [ KP_3,          U2660,          U21CC,     greaterthanequal,KP_Next,    KP_Next,    U230B     ] };
-    key <KPEN> { [ KP_Enter,      KP_Enter,       KP_Enter,     KP_Enter,     KP_Enter,   KP_Enter,   KP_Enter  ] };
-    key <KPEQ> { [ KP_Equal ] };
-
-    // bottommost row
-    // --------------
-    key  <KP0> { [ KP_0,         U2423,           percent,   U2030,        KP_Insert,   KP_Insert,   U25A1    ] };
-    key <KPDL> { [ KP_Decimal,   comma,           period,    apostrophe,   KP_Delete,   KP_Delete,   quotedbl ] };
 
 };
