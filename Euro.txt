@@ -148,6 +148,8 @@ BEGIN_TABLE
 ### Spanish
 ~n ñ 0
 ~N Ñ 0
+### fun
+:~ ⍨ 0
 ### to allow direct input
 " " 0
 ' ' 0
