@@ -8,3 +8,7 @@ xmodmap ~/.Xmodmap
 
 xset r rate 300 65
 xset m 3 2
+
+if [[ $(hostname) == "azathoth" ]]; then
+    numlockx on
+fi
