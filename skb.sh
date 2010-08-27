@@ -7,7 +7,11 @@ setxkbmap saneo
 xmodmap ~/.Xmodmap
 
 xset r rate 300 65
-xset m 3 2
+if [[ $(hostname) == "azathoth" ]]; then
+    xset m 1 2
+else # good default
+    xset m 3 2
+fi
 
 if [[ $(hostname) == "azathoth" ]]; then
     numlockx on
