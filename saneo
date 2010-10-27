@@ -20,20 +20,25 @@ xkb_symbols "saneo" {
 
     // definition of Mod4
     key.type[Group1]="ONE_LEVEL";
-    key <LSGT> { [ ISO_Level5_Shift ]};
+    key <TAB>  { [ ISO_Level5_Shift ]};
     key <RALT> { [ ISO_Level5_Shift ]};
-    modifier_map Mod3 { <LSGT>, <RALT> };
+    modifier_map Mod3 { <TAB>, <RALT> };
     // Attention: ^^^ This is a X server variable, not the Neo-Mod3.
+    
+    // definition of CTRL
+    key <LSGT> { [ Control_L ] };
+    key <AB10> { [ Control_R ] };
+    modifier_map Control { <LSGT>, <AB10> };
+
+    // swap left WIN and ALT
+    key <LWIN> { [ Alt_L ] };
+    key <LALT> { [ Super_L ] };
 
     key.type[Group1]="EIGHT_LEVEL_ALPHABETIC" ;
 
-    // Tab as Multi_key (Compose)
-    // --------------------------
-    key  <TAB> { [ Tab, ISO_Left_Tab, Multi_key ] };
-
     // number row
     // ----------
-    key <TLDE> { [ dead_circumflex,         dead_tilde,              dead_abovering,          dead_breve,              dead_caron,              Pointer_EnableKeys,      dead_macron] };
+    key <TLDE> { [ 0 ] };
 
     key <AE01> { [ 1,                       degree,                  onesuperior,             onesubscript,            ordfeminine,             NoSymbol,                notsign] };
     key <AE02> { [ 2,                       section,                 twosuperior,             twosubscript,            masculine,               NoSymbol,                logicalor] };
@@ -62,7 +67,7 @@ xkb_symbols "saneo" {
     key <AD07> { [ h,                       H,                       greater,                 Greek_psi,               7,                       NoSymbol,                Greek_PSI] };
     key <AD08> { [ g,                       G,                       quotedbl,                Greek_gamma,             8,                       NoSymbol,                Greek_GAMMA] };
     key <AD09> { [ f,                       F,                       bracketright,            Greek_phi,               9,                       NoSymbol,                Greek_PHI] };
-    key <AD10> { [ q,                       Q,                       bar,                     U03D5,                   KP_Add,                  NoSymbol,                U211A] };
+    key <AD10> { [ q,                       Q,                       grave,                   U03D5,                   KP_Add,                  NoSymbol,                U211A] };
 
     key <AD11> { [ at,                      NoSymbol,                grave,                   Greek_finalsmallsigma,   U2212,                   NoSymbol,                jot] };
 
@@ -87,16 +92,15 @@ xkb_symbols "saneo" {
     // bottom row
     // ----------
     key <AB01> { [ XF86AudioLowerVolume,    XF86AudioRaiseVolume,    percent,                 NoSymbol,                Home,                    Home,                    union] };
-    key <AB02> { [ grave,                   Touroku,                 asciicircum,             U03F5,                   Prior,                   Prior,                   intersection] };
-    key <AB03> { [ bar,                     at,                      question,                Greek_eta,               Next,                    Next,                    U2135] };
+    key <AB02> { [ asterisk,                colon,                   asciicircum,             U03F5,                   Prior,                   Prior,                   intersection] };
+    key <AB03> { [ bar,                     colon,                   question,                Greek_eta,               Next,                    Next,                    U2135] };
     key <AB04> { [ p,                       P,                       minus,                   Greek_pi,                End,                     End,                     Greek_PI] };
     key <AB05> { [ z,                       Z,                       at,                      Greek_zeta,              Undo,                    Undo,                    U2124] };
 
     key <AB06> { [ b,                       B,                       plus,                    Greek_beta,              0,                       NoSymbol,                U21D0] };
     key <AB07> { [ m,                       M,                       dollar,                  Greek_mu,                1,                       NoSymbol,                ifonlyif] };
-    key <AB08> { [ asterisk,                endash,                  ampersand,               Greek_rho,               2,                       NoSymbol,                U21D2] };
-    key <AB09> { [ j,                       J,                       numbersign,              U03D1,                   3,                       NoSymbol,                Greek_THETA] };
-    key <AB10> { [ y,                       Y,                       colon,                   Greek_theta,             semicolon,               NoSymbol,                U21A6] };
+    key <AB08> { [ j,                       J,                       ampersand,               Greek_rho,               2,                       NoSymbol,                U21D2] };
+    key <AB09> { [ y,                       Y,                       numbersign,              U03D1,                   3,                       NoSymbol,                Greek_THETA] };
 
     // Space key                                                     
     // ---------
