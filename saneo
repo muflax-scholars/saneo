@@ -28,7 +28,7 @@ xkb_symbols "saneo" {
     // definition of CTRL
     key <LSGT> { [ Control_L ] };
     key <AB10> { [ Control_R ] };
-    modifier_map Control { <LSGT>, <AB10> };
+    modifier_map Control { <LSGT>, <AB10>, <LCTL>, <RCTL> };
 
     // swap left WIN and ALT
     key <LWIN> { [ Alt_L ] };
