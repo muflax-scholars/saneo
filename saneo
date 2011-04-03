@@ -20,14 +20,14 @@ xkb_symbols "saneo" {
 
     // definition of Mod4
     key.type[Group1]="ONE_LEVEL";
-    key <AB10> { [ ISO_Level5_Shift ] };
     key <RALT> { [ ISO_Level5_Shift ]};
-    modifier_map Mod3 { <AB10>, <RALT> };
+    modifier_map Mod3 { <RALT> };
     // Attention: ^^^ This is a X server variable, not the Neo-Mod3.
     
     // definition of CTRL
     key <LSGT> { [ Control_L ] };
-    modifier_map Control { <LSGT>, <LCTL>, <RCTL> };
+    key <AB10> { [ Control_R ] };
+    modifier_map Control { <LSGT>, <LCTL>, <AB10>, <RCTL> };
 
     // swap left WIN and ALT
     key <LWIN> { [ Alt_L ] };
