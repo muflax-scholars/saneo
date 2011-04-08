@@ -18,10 +18,15 @@
 ! Modifier init
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 clear Lock
+! alt, but needed for windows keys
+clear Mod1 
+! numlock
 clear Mod2
-! Mod2 war NumLock !
 clear Mod3
+! windows keys
+clear Mod4
 clear Mod5
+clear Control
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! Shift
@@ -36,19 +41,22 @@ keycode 62 =  Shift_R
 ! 66=left 48=right
 keycode 66 =  ISO_Group_Shift ISO_Group_Shift ISO_First_Group  NoSymbol
 keycode 48 =  ISO_Group_Shift ISO_Group_Shift ISO_First_Group  NoSymbol
+add Mod3 = ISO_First_Group
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! Mod4
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! 108=left (thumb)
-keycode 108 = ISO_Level3_Shift  ISO_Level3_Shift  ISO_Group_Shift   ISO_Group_Shift 
+keycode 108 = ISO_Level3_Shift  ISO_Level3_Shift
+keysym ISO_Level3_Shift = ISO_Level3_Shift  ISO_Level3_Shift
+add Mod5 = ISO_Level3_Shift
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-! window keys
+! windows keys
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-! 64=left 134=right 135=kanji
+! 64=left 135=kanji
 keycode 64 = Super_L
-keycode 134 = Super_R
+add Mod4 = Super_L
 keycode 135 = Kanji
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -56,6 +64,7 @@ keycode 135 = Kanji
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! 133=left
 keycode 133 = Alt_L
+add Mod1 = Alt_L
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! ctrl
@@ -63,6 +72,9 @@ keycode 133 = Alt_L
 ! 94=left, 61=right (pinky) 
 keycode 94 = Control_L
 keycode 61 = Control_R
+add Control = Control_L
+add Control = Control_R
+
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! Tab key
@@ -137,10 +149,6 @@ keycode 57 = 	b		B		plus		Greek_beta	0		NoSymbol	U21D0		NoSymbol
 keycode 58 = 	m		M		dollar		Greek_mu	1		KP_1		ifonlyif	NoSymbol
 keycode 59 =    j		J		ampersand	U03F1		2		KP_2		U21D2		NoSymbol
 keycode 60 =    y               Y	        numbersign	U03D1		3		KP_3		U21A6		NoSymbol
-
-
-add Mod3 = ISO_First_Group
-add Mod5 = ISO_Level3_Shift
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! pointer

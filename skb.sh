@@ -3,8 +3,7 @@
 # License: GNU GPL 3 <http://www.gnu.org/copyleft/gpl.html>
 
 setxkbmap saneo
-
-xmodmap ~/.Xmodmap
+#xmodmap ~/.Xmodmap
 
 xset r rate 300 65
 if [[ $(hostname) == "azathoth" ]]; then
