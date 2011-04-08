@@ -118,17 +118,17 @@ keycode 29 = 	k		K		equal		Greek_kappa	exclamdown	NoSymbol	multiply	NoSymbol
 keycode 30 = 	h		H		greater		Greek_psi	7		KP_7		Greek_PSI	Greek_PSI
 keycode 31 = 	g		G		quotedbl	Greek_gamma	8		KP_8		Greek_GAMMA	Greek_GAMMA
 keycode 32 = 	f		F		bracketright	Greek_phi	9		KP_9		Greek_PHI	Greek_PHI
-keycode 33 = 	q		Q		grave   	U03D5		KP_Add		KP_Add		U211A		NoSymbol
-keycode 34 =    at		NoSymbol	grave   	Greek_finalsmallsigma  U2212		NoSymbol	jot		NoSymbol
+keycode 33 = 	q		Q		ssharp   	U03D5		KP_Add		KP_Add		U211A		NoSymbol
+keycode 34 =    ssharp		NoSymbol	grave   	Greek_finalsmallsigma  U2212		NoSymbol	jot		NoSymbol
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! The home row (middle row)
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-keycode 38 = 	u		U		comma   	NoSymbol	Left		Left		includedin	NoSymbol
+keycode 38 = 	u		U		comma   	Udiaeresis	Left		Left		udiaeresis	NoSymbol
 keycode 39 = 	i		I		braceleft	Greek_iota	Up		Up		integral	NoSymbol
-keycode 40 = 	a		A		backslash	Greek_alpha	Down		Down		U2200		NoSymbol
+keycode 40 = 	a		A		backslash	Adiaeresis	Down		Down		adiaeresis	NoSymbol
 keycode 41 = 	e		E		semicolon	Greek_epsilon	Right		Right		U2203		NoSymbol
-keycode 42 = 	o		O		parenleft	Greek_omicron	Tab		Tab		elementof	NoSymbol
+keycode 42 = 	o		O		parenleft	Odiaeresis	Tab		Tab		odiaeresis	NoSymbol
 
 keycode 43 = 	s		S		parenright	Greek_sigma	questiondown	NoSymbol	Greek_SIGMA	Greek_SIGMA
 keycode 44 = 	n		N		underscore	Greek_nu	4		KP_4		U2115		NoSymbol

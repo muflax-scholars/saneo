@@ -1,6 +1,6 @@
 Layout:
                  
-    M4 x v l c w k h g f q  
+    M4 x v l c w k h g f q ß 
        ~ [ ' < ! = > " ] `  
      Esc D R B I   7 8 9 
 

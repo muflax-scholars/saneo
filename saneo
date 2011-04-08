@@ -66,17 +66,17 @@ xkb_symbols "saneo" {
     key <AD07> { [ h,                       H,                       greater,                 Greek_psi,               7,                       NoSymbol,                Greek_PSI] };
     key <AD08> { [ g,                       G,                       quotedbl,                Greek_gamma,             8,                       NoSymbol,                Greek_GAMMA] };
     key <AD09> { [ f,                       F,                       bracketright,            Greek_phi,               9,                       NoSymbol,                Greek_PHI] };
-    key <AD10> { [ q,                       Q,                       grave,                   U03D5,                   KP_Add,                  NoSymbol,                U211A] };
+    key <AD10> { [ q,                       Q,                       ssharp,                   U03D5,                   KP_Add,                  NoSymbol,                U211A] };
 
-    key <AD11> { [ at,                      NoSymbol,                grave,                   Greek_finalsmallsigma,   U2212,                   NoSymbol,                jot] };
+    key <AD11> { [ ssharp,     NoSymbol,    grave,                   Greek_finalsmallsigma,   U2212,                   NoSymbol,                jot] };
 
     // middle row
     // ----------
-    key <AC01> { [ u,                       U,                       comma,                   NoSymbol,                Left,                    Left,                    includedin] };
+    key <AC01> { [ u,                       U,                       comma,                   Udiaeresis,                Left,                    Left,                    udiaeresis] };
     key <AC02> { [ i,                       I,                       braceleft,               Greek_iota,              Up,                      Up,                      integral] };
-    key <AC03> { [ a,                       A,                       backslash,               Greek_alpha,             Down,                    Down,                    U2200] };
+    key <AC03> { [ a,                       A,                       backslash,               Adiaeresis,             Down,                    Down,                    adiaeresis] };
     key <AC04> { [ e,                       E,                       semicolon,               Greek_epsilon,           Right,                   Right,                   U2203] };
-    key <AC05> { [ o,                       O,                       parenleft,               Greek_omicron,           Tab,                     Tab,                     elementof] };
+    key <AC05> { [ o,                       O,                       parenleft,               Odiaeresis,           Tab,                     Tab,                     odiaeresis] };
 
     key <AC06> { [ s,                       S,                       parenright,              Greek_sigma,             questiondown,            NoSymbol,                Greek_SIGMA] };
     key <AC07> { [ n,                       N,                       underscore,              Greek_nu,                4,                       NoSymbol,                U2115] };
