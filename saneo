@@ -68,7 +68,7 @@ xkb_symbols "saneo" {
     key <AD09> { [ f,                       F,                       bracketright,            Greek_phi,               9,                       NoSymbol,                Greek_PHI] };
     key <AD10> { [ q,                       Q,                       ssharp,                   U03D5,                   KP_Add,                  NoSymbol,                U211A] };
 
-    key <AD11> { [ ssharp,     NoSymbol,    grave,                   Greek_finalsmallsigma,   U2212,                   NoSymbol,                jot] };
+    key <AD11> { [ ssharp,                  NoSymbol,                grave,                   Greek_finalsmallsigma,   U2212,                   NoSymbol,                jot] };
 
     // middle row
     // ----------
