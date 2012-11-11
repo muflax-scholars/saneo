@@ -17,7 +17,8 @@ xkb_symbols "saneo" {
     key.type[Group1]="THREE_LEVEL";
     key <AC11> { [ ISO_Level3_Shift, ISO_Level3_Shift,  NoSymbol ] };
     key <CAPS> { [ ISO_Level3_Shift, ISO_Level3_Shift,  NoSymbol ] };
-
+    modifier_map Mod5 { <AC11>, <CAPS> };
+    
     // definition of Mod4
     key.type[Group1]="ONE_LEVEL";
     key <RALT> { [ ISO_Level5_Shift ]};
