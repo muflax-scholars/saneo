@@ -7,11 +7,17 @@ setxkbmap saneo
 
 xset r rate 300 65
 if [[ $(hostname) == "azathoth" ]]; then
-    xset m 1 2
+  xset m 1 2
+elif [[ $(hostname) == "scabeiathrax" ]]; then
+  xset m 2 2
 else # good default
-    xset m 3 2
+  xset m 3 2
 fi
 
 if [[ $(hostname) == "azathoth" ]]; then
-    numlockx on
+  numlockx on
+fi
+
+if [[ $(hostname) == "scabeiathrax" ]]; then
+  sudo ~/src/misc/apple/un-apple-keyboard/fix-apple-keyboard
 fi
