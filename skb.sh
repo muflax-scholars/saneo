@@ -9,7 +9,7 @@ xset r rate 300 65
 if [[ $(hostname) == "azathoth" ]]; then
   xset m 1 2
 elif [[ $(hostname) == "scabeiathrax" ]]; then
-  xset m 2 2
+  xset m 13/10 1
 else # good default
   xset m 3 2
 fi
