@@ -25,7 +25,7 @@ NAME = Umlauts
 DESCRIPTION = Input umlauts and other diacritics
 
 ### Supported languages of this table
-LANGUAGES = other
+LANGUAGES = other,en
 
 ### Prompt string to be displayed in the status area.
 STATUS_PROMPT = EU
