@@ -14,22 +14,18 @@ UUID = 60616881-7f93-4cfe-8edc-dcce548cfee8
 ### A unique number indicates the version of this file.
 ### For example the last modified date of this file.
 ### This number must be less than 2^32.
-SERIAL_NUMBER = 2
+SERIAL_NUMBER = 2013
 
 ### Good enough...
-ICON = /usr/share/scim/icons/IPA-X-SAMPA.png
+ICON = /usr/share/ibus-table/icons/english.svg
 
 ### The default name of this table
-NAME = Diacritics
+NAME = Umlauts
 
-### The local names of this table
-###NAME.ru_RU =
+DESCRIPTION = Input umlauts and other diacritics
 
 ### Supported languages of this table
 LANGUAGES = other
-
-### The author of this table
-AUTHOR = muflax <mail@muflax.com>
 
 ### Prompt string to be displayed in the status area.
 STATUS_PROMPT = EU
@@ -59,47 +55,20 @@ AUTO_FILL = TRUE
 ### Otherwise the lookup table won't be shown unless the user requires it by moving the preedit caret left.
 ALWAYS_SHOW_LOOKUP = FALSE
 
-### Enable full width punctuation property
-USE_FULL_WIDTH_PUNCT = FALSE
-
-### Use full width punctuation by default
+### Disable full width punctuation property
 DEF_FULL_WIDTH_PUNCT = FALSE
 
-### Enable full width letter property
-USE_FULL_WIDTH_LETTER = FALSE
-
-### Use full width letter by default
+### Disable full width letter property
 DEF_FULL_WIDTH_LETTER = FALSE
 
-### The maxmium length of a key.
+### Whether support PinYin Mode, default is true.
+### this feature is just for Chinese, set it to False if your IM is not
+### Chinese.
+PINYIN_MODE = FALSE
+
+### Valid input chars. Note that you have to define 1:1 versions for each valid char later so you can just type them normally.
+VALID_INPUT_CHARS == aousAOU;
 MAX_KEY_LENGTH = 2
-
-### Valid input chars.
-VALID_INPUT_CHARS == +!\%&'-./0123456789:<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[]^_`abcdefghijklmnopqrstuvwxyz{|}~"
-
-### Single wildcard char, can have multiple chars.
-###SINGLE_WILDCARD_CHAR = ?
-
-### Multi wildcard char.
-###MULTI_WILDCARD_CHAR = *
-
-### The key strokes to split inputted string.
-###SPLIT_KEYS = quoteright
-
-### The key strokes to commit the convert result to client.
-COMMIT_KEYS = space,Return
-
-### The key strokes to forward the inputted string to client.
-###FORWARD_KEYS = Return
-
-### The key strokes to select candidiate phrases.
-SELECT_KEYS = 1,2,3,4,5,6,7,8,9
-
-### The key strokes to page up the lookup table.
-PAGE_UP_KEYS = Page_Up
-
-### The key strokes to page down the lookup table.
-PAGE_DOWN_KEYS = Page_Down
 
 END_DEFINITION
 
@@ -107,55 +76,20 @@ END_DEFINITION
 ### input, output, freq
 BEGIN_TABLE
 ### German
-"a ä 0
-"A Ä 0
-"o ö 0
-"O Ö 0
-"u ü 0
-"U Ü 0
-"s ß 0 # there is no capital ß ;b
-### French
-/oe œ 0
-/OE Œ 0
-/ae æ 0
-/AE Æ 0
-'e é 0
-'E É 0
-"e ë 0
-"E Ë 0
-"i ï 0
-"I Ï 0
-"y ÿ 0
-"Y Ÿ 0
-^a â 0
-^A Â 0
-^e ê 0
-^E Ê 0
-^i î 0
-^I Î 0
-^o ô 0
-^O Ô 0
-^u û 0
-^U Û 0
-~c ç 0
-~C Ç 0
-`a à 0
-`A À 0
-`e è 0
-`E È 0
-`u ù 0
-`U Ù 0
-### Spanish
-~n ñ 0
-~N Ñ 0
-### fun
-:~ ⍨ 0
+a;	ä	0
+A;	Ä	0
+o;	ö	0
+O;	Ö	0
+u;	ü	0
+U;	Ü	0
+s;	ß	0
 ### to allow direct input
-" " 0
-' ' 0
-~ ~ 0
-` ` 0
-^ ^ 0
-/ / 0
-: : 0
+a	a	0
+o	o	0
+u	u	0
+s	s	0
+A	A	0
+O	O	0
+U	U	0
+;	;	0
 END_TABLE
