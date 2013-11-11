@@ -20,10 +20,10 @@ SERIAL_NUMBER = 2
 ICON = /usr/share/scim/icons/IPA-X-SAMPA.png
 
 ### The default name of this table
-NAME = European Diacritics
+NAME = Diacritics
 
-### The local names of this table 
-###NAME.ru_RU = 
+### The local names of this table
+###NAME.ru_RU =
 
 ### Supported languages of this table
 LANGUAGES = other
@@ -75,7 +75,7 @@ DEF_FULL_WIDTH_LETTER = FALSE
 MAX_KEY_LENGTH = 2
 
 ### Valid input chars.
-VALID_INPUT_CHARS = +!\%&'-./0123456789:<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[]^_`abcdefghijklmnopqrstuvwxyz{|}~"
+VALID_INPUT_CHARS == +!\%&'-./0123456789:<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[]^_`abcdefghijklmnopqrstuvwxyz{|}~"
 
 ### Single wildcard char, can have multiple chars.
 ###SINGLE_WILDCARD_CHAR = ?
