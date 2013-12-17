@@ -96,7 +96,7 @@ xkb_symbols "saneo" {
     key <AC10> { [ d               , D               , period          , U00F0           , U0300           , NoSymbol        , NoSymbol        ] };
 
     // the one left to return
-    key <BKSL> { [ Multi_key       , Multi_key       , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
+    key <BKSL> { [ NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
 
     // bottom row
     //             normal          , shift           , mod3            , mod3+shift      , mod4            , mod4+shift      , mod3+mod4
