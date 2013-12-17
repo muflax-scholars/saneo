@@ -73,11 +73,11 @@ xkb_symbols "saneo" {
 
     // home row
     //             normal          , shift           , mod3            , mod3+shift      , mod4            , mod4+shift      , mod3+mod4
-    key <AC01> { [ u               , U               , comma           , Udiaeresis      , Left            , Left            , udiaeresis      ] };
-    key <AC02> { [ i               , I               , braceleft       , Greek_iota      , Up              , Up              , integral        ] };
-    key <AC03> { [ a               , A               , backslash       , Adiaeresis      , Down            , Down            , adiaeresis      ] };
+    key <AC01> { [ u               , U               , comma           , NoSymbol        , Left            , Left            , NoSymbol        ] };
+    key <AC02> { [ i               , I               , braceleft       , NoSymbol        , Up              , Up              , NoSymbol        ] };
+    key <AC03> { [ a               , A               , backslash       , NoSymbol        , Down            , Down            , NoSymbol        ] };
     key <AC04> { [ e               , E               , semicolon       , NoSymbol        , Right           , Right           , NoSymbol        ] };
-    key <AC05> { [ o               , O               , parenleft       , Odiaeresis      , Tab             , Tab             , odiaeresis      ] };
+    key <AC05> { [ o               , O               , parenleft       , NoSymbol        , Tab             , Tab             , NoSymbol        ] };
 
     key <AC06> { [ s               , S               , parenright      , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
     key <AC07> { [ n               , N               , underscore      , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
@@ -94,7 +94,7 @@ xkb_symbols "saneo" {
     key <AB02> { [ asterisk        , colon           , asciicircum     , NoSymbol        , Prior           , Prior           , NoSymbol        ] };
     key <AB03> { [ bar             , colon           , question        , NoSymbol        , Next            , Next            , NoSymbol        ] };
     key <AB04> { [ p               , P               , minus           , NoSymbol        , End             , End             , NoSymbol        ] };
-    key <AB05> { [ z               , Z               , at              , NoSymbol        , Undo            , Undo            , NoSymbol        ] };
+    key <AB05> { [ z               , Z               , at              , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
 
     key <AB06> { [ b               , B               , plus            , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
     key <AB07> { [ m               , M               , dollar          , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
