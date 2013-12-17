@@ -83,9 +83,9 @@ xkb_symbols "saneo" {
 
     // home row
     //             normal          , shift           , mod3            , mod3+shift      , mod4            , mod4+shift      , mod3+mod4
-    key <AC01> { [ u               , U               , comma           , NoSymbol        , Left            , Left            , NoSymbol        ] };
+    key <AC01> { [ u               , U               , comma           , U0259           , Left            , Left            , NoSymbol        ] };
     key <AC02> { [ i               , I               , braceleft       , U203D           , Up              , Up              , NoSymbol        ] };
-    key <AC03> { [ a               , A               , backslash       , U0259           , Down            , Down            , NoSymbol        ] };
+    key <AC03> { [ a               , A               , backslash       , U00E6           , Down            , Down            , NoSymbol        ] };
     key <AC04> { [ e               , E               , semicolon       , EuroSign        , Right           , Right           , NoSymbol        ] };
     key <AC05> { [ o               , O               , parenleft       , U00F8           , Tab             , Tab             , NoSymbol        ] };
 
