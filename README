@@ -1,7 +1,5 @@
 muflax' custom keyboard layouts. Have a look at "mod3.txt" for a basic overview.
 
-"saneo" is the xbd file you should use, but "saneo.xmodmap" generally works too if you're forced to use a machine without admin privileges.
+"saneo" is the xbd file you should use, but "saneo.xmodmap" generally works too if you're forced to use a machine without admin privileges. "neo.map" is a version for pure terminals. The additional files tend to be somewhat incomplete and out-of-date.
 
-"neo.map" is a slightly outdated version for pure terminals.
-
-"euro.txt" is one way to (later) implement full diacritic support, based on ibus-table. "XCompose" is the other way.
+"euro.txt" is one way to (later) implement full diacritic support, based on ibus-table.
