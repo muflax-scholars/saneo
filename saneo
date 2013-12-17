@@ -90,7 +90,7 @@ xkb_symbols "saneo" {
 
     // bottom row
     //             normal          , shift           , mod3            , mod3+shift      , mod4            , mod4+shift      , mod3+mod4
-    key <AB01> { [ Muhenkan        , Muhenkan        , percent         , NoSymbol        , Home            , Home            , NoSymbol        ] };
+    key <AB01> { [ percent         , grave           , at              , NoSymbol        , Home            , Home            , NoSymbol        ] };
     key <AB02> { [ asterisk        , colon           , asciicircum     , NoSymbol        , Prior           , Prior           , NoSymbol        ] };
     key <AB03> { [ bar             , colon           , question        , NoSymbol        , Next            , Next            , NoSymbol        ] };
     key <AB04> { [ p               , P               , minus           , NoSymbol        , End             , End             , NoSymbol        ] };
