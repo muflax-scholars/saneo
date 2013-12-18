@@ -1,6 +1,6 @@
 ### Table         Russian Transliteration Table
 ###
-### Description   Russian Translit Table for IBus-Table.
+### Description   Russian Transliteration Table for IBus-Table.
 ###
 ### This file must be encoded into UTF-8.
 
@@ -70,21 +70,6 @@ MAX_KEY_LENGTH = 2
 
 ### Valid input chars.
 VALID_INPUT_CHARS = ABCDEFGHIJKLMNOPQRSTUVWYZabcdefghijklmnopqrstuvwxyzßẞłŁ|
-
-### The key strokes to commit the convert result to client.
-### COMMIT_KEYS = Shift+space
-
-### The key strokes to forward the inputted string to client.
-### FORWARD_KEYS = Return
-
-### The key strokes to select candidiate phrases.
-### SELECT_KEYS = 1,2,3,4,5,6,7,8,9
-
-### The key strokes to page up the lookup table.
-### PAGE_UP_KEYS = Page_Up
-
-### The key strokes to page down the lookup table.
-### PAGE_DOWN_KEYS = Page_Down
 
 END_DEFINITION
 
