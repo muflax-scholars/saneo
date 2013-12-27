@@ -48,21 +48,21 @@ xkb_symbols "saneo" {
 
     // number row
     //             normal          , shift           , mod3            , mod3+shift      , mod4            , mod4+shift      , mod3+mod4
-    key <AE01> { [ 1               , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
-    key <AE02> { [ 2               , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
-    key <AE03> { [ 3               , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
-    key <AE04> { [ 4               , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
-    key <AE05> { [ 5               , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
-    key <AE06> { [ 6               , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
-    key <AE07> { [ 7               , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
-    key <AE08> { [ 8               , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
-    key <AE09> { [ 9               , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
-    key <AE10> { [ 0               , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
-    // tilde at the beginning of the number row; should be symmetrical the 0 key
+    key <AE01> { [ 1               , NoSymbol        , F1              , NoSymbol        , F1              , NoSymbol        , NoSymbol        ] };
+    key <AE02> { [ 2               , NoSymbol        , F2              , NoSymbol        , F2              , NoSymbol        , NoSymbol        ] };
+    key <AE03> { [ 3               , NoSymbol        , F3              , NoSymbol        , F3              , NoSymbol        , NoSymbol        ] };
+    key <AE04> { [ 4               , NoSymbol        , F4              , NoSymbol        , F4              , NoSymbol        , NoSymbol        ] };
+    key <AE05> { [ 5               , NoSymbol        , F5              , NoSymbol        , F5              , NoSymbol        , NoSymbol        ] };
+    key <AE06> { [ 6               , NoSymbol        , F6              , NoSymbol        , F6              , NoSymbol        , NoSymbol        ] };
+    key <AE07> { [ 7               , NoSymbol        , F7              , NoSymbol        , F7              , NoSymbol        , NoSymbol        ] };
+    key <AE08> { [ 8               , NoSymbol        , F8              , NoSymbol        , F8              , NoSymbol        , NoSymbol        ] };
+    key <AE09> { [ 9               , NoSymbol        , F9              , NoSymbol        , F9              , NoSymbol        , NoSymbol        ] };
+    key <AE10> { [ 0               , NoSymbol        , F10             , NoSymbol        , F10             , NoSymbol        , NoSymbol        ] };
+    // tilde at the beginning of the number row
     key <TLDE> { [ 0               , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
 
-    key <AE11> { [ NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
-    key <AE12> { [ NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
+    key <AE11> { [ NoSymbol        , NoSymbol        , F11             , NoSymbol        , F11             , NoSymbol        , NoSymbol        ] };
+    key <AE12> { [ NoSymbol        , NoSymbol        , F12             , NoSymbol        , F12             , NoSymbol        , NoSymbol        ] };
 
     // top row
     //             normal          , shift           , mod3            , mod3+shift      , mod4            , mod4+shift      , mod3+mod4
