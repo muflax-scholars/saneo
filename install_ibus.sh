@@ -4,7 +4,7 @@
 
 for txt in ibus/*.txt; do
   db="ibus/${txt:t:r}.db"
-  ibus-table-createdb -s $txt -n $db  -d
+  ibus-table-createdb -d -s $txt -n $db
   /bin/cp -v $db /usr/share/ibus-table/tables/
 done
 
