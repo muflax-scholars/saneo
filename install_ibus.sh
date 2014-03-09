@@ -8,4 +8,4 @@ for txt in ibus/*.txt; do
   /bin/cp -v $db /usr/share/ibus-table/tables/
 done
 
-ibus-daemon --xim --replace --daemonize
+ibus restart

@@ -19,6 +19,10 @@ SERIAL_NUMBER = 2013
 ### The default name of this table
 NAME = Russian
 
+### ICON can be any format as long as your pygtk can recognized
+### the most widely ones are "png" and "svg", letter one is recommended
+ICON = ibus-table.svg
+
 ### Supported languages of this table
 LANGUAGES = ru_RU
 
