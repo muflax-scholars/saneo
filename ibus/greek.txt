@@ -69,179 +69,67 @@ DEF_FULL_WIDTH_LETTER = FALSE
 MAX_KEY_LENGTH = 2
 
 ### Valid input chars.
-VALID_INPUT_CHARS = ABCDEFGHIJKLMNOPQRSTUVWYZabcdefghijklmnopqrstuvwxyzßẞłŁ|
+VALID_INPUT_CHARS = ABCDEFGHIJKLMNOPQRSTUVWYZabcdefghijklmnopqrstuvwxyzßẞ
 
 END_DEFINITION
 
 ### Begin Table data.
 BEGIN_TABLE
 
-### normal letters
-A	А	0
-B	Б	0
-C	Ц	0
-D	Д	0
-E	Е	0
-F	Ф	0
-G	Г	0
-H	Х	0
-I	И	0
-J	Й	0
-K	К	0
-L	Л	0
-M	М	0
-N	Н	0
-O	О	0
-P	П	0
-R	Р	0
-S	С	0
-T	Т	0
-U	У	0
-V	В	0
-W	Ш	0
-X	Х	0
-Z	З	0
-a	а	0
-b	б	0
-c	ц	0
-d	д	0
-e	е	0
-f	ф	0
-g	г	0
-h	х	0
-i	и	0
-j	й	0
-k	к	0
-l	л	0
-m	м	0
-n	н	0
-o	о	0
-p	п	0
-r	р	0
-s	с	0
-t	т	0
-u	у	0
-v	в	0
-w	ш	0
-x	х	0
-z	з	0
+A	Α	0
+B	Β	0
+C	Χ	0
+D	Δ	0
+E	Ε	0
+F	Φ	0
+G	Γ	0
+I	Ι	0
+J	Η	0
+K	Κ	0
+L	Λ	0
+M	Μ	0
+N	Ν	0
+O	Ο	0
+P	Π	0
+Q	Θ	0
+ẞ	Θ	0
+R	Ρ	0
+S	Σ	0
+T	Τ	0
+U	Υ	0
+V	Ϝ	0
+W	Ω	0
+X	Ξ	0
+Y	Ψ	0
+Z	Ζ	0
+a	α	0
+b	β	0
+c	χ	0
+d	δ	0
+e	ε	0
+f	φ	0
+g	γ	0
+i	ι	0
+j	η	0
+k	κ	0
+l	λ	0
+m	μ	0
+n	ν	0
+o	ο	0
+p	π	0
+q	θ	0
+ß	θ	0
+r	ρ	0
+s	ς	0
+t	τ	0
+u	υ	0
+v	ϝ	0
+w	ω	0
+x	ξ	0
+y	ψ	0
+z	ζ	0
 
-# fake diacritic
-Q	Ь	0
-q	ь	0
-ß	ъ	0
-Ł	Ъ	0
-ł	ъ	0
-ẞ	Ъ	0
-
-### use y as a prefix for the digraphs
-YA	Я	0
-YC	Ч	0
-YE	Э	0
-YI	Ы	0
-YJ	Щ	0
-YO	Ё	0
-YS	Ш	0
-YU	Ю	0
-YZ	Ж	0
-Ya	Я	0
-Yc	Ч	0
-Ye	Э	0
-Yi	Ы	0
-Yj	Щ	0
-Yo	Ё	0
-Ys	Ш	0
-Yu	Ю	0
-Yz	Ж	0
-ya	я	0
-yc	ч	0
-ye	э	0
-yi	ы	0
-yj	щ	0
-yo	ё	0
-ys	ш	0
-yu	ю	0
-yz	ж	0
-
-### Kazakh letters, use | as prefix
-|C	Ҫ	0
-|E	Ә	0
-|H	Һ	0
-|I	Ұ	0
-|K	Ҡ	0
-|N	Ң	0
-|O	Ө	0
-|Q	Қ	0
-|R	Ғ	0
-|U	Ү	0
-|c	ҫ	0
-|e	ә	0
-|h	һ	0
-|i	ұ	0
-|k	ҡ	0
-|n	ң	0
-|o	ө	0
-|q	қ	0
-|r	ғ	0
-|u	ү	0
-### make the | typable by itself; note that "||" doesn't work for some reason
-|Y	|	0
-|y	|	0
-
-### bump of greek table, to be merged
-### &	ϗ	0
-### ;	·	0
-### ?	;	0
-### A	Α	0
-### B	Β	0
-### C	Χ	0
-### D	Δ	0
-### E	Ε	0
-### F	Φ	0
-### G	Γ	0
-### H	Η	0
-### I	Ι	0
-### K	Κ	0
-### L	Λ	0
-### M	Μ	0
-### N	Ν	0
-### O	Ο	0
-### P	Π	0
-### Q	Θ	0
-### R	Ρ	0
-### S	Σ	0
-### T	Τ	0
-### U	Υ	0
-### V	Ϝ	0
-### W	Ω	0
-### X	Ξ	0
-### Y	Ψ	0
-### Z	Ζ	0
-### a	α	0
-### b	β	0
-### c	χ	0
-### d	δ	0
-### e	ε	0
-### f	φ	0
-### g	γ	0
-### h	η	0
-### i	ι	0
-### k	κ	0
-### l	λ	0
-### m	μ	0
-### n	ν	0
-### o	ο	0
-### p	π	0
-### q	θ	0
-### r	ρ	0
-### s	ς	0
-### t	τ	0
-### u	υ	0
-### v	ϝ	0
-### w	ω	0
-### x	ξ	0
-### y	ψ	0
-### z	ζ	0
+### bump of greek table, to be merged at some point
 ### |	 ͅ	0
 ### A<	Ἁ	0
 ### A>	Ἀ	0
