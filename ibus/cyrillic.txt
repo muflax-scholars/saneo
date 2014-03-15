@@ -85,7 +85,7 @@ A	А	0
 B	Б	0
 C	Ц	0
 D	Д	0
-E	Е	0
+E	Э	0
 F	Ф	0
 G	Г	0
 H	Х	0
@@ -109,7 +109,7 @@ a	а	0
 b	б	0
 c	ц	0
 d	д	0
-e	е	0
+e	э	0
 f	ф	0
 g	г	0
 h	х	0
@@ -141,7 +141,7 @@ q	ь	0
 ### use y as a prefix for the digraphs
 YA	Я	0
 YC	Ч	0
-YE	Э	0
+YE	Е	0
 YI	Ы	0
 YJ	Щ	0
 YO	Ё	0
@@ -150,7 +150,7 @@ YU	Ю	0
 YZ	Ж	0
 Ya	Я	0
 Yc	Ч	0
-Ye	Э	0
+Ye	Е	0
 Yi	Ы	0
 Yj	Щ	0
 Yo	Ё	0
@@ -159,7 +159,7 @@ Yu	Ю	0
 Yz	Ж	0
 ya	я	0
 yc	ч	0
-ye	э	0
+ye	е	0
 yi	ы	0
 yj	щ	0
 yo	ё	0
