@@ -5,8 +5,16 @@
 
 require "muflax"
 
-precomposed = Hash.new {|h, lang| h[lang] = {}}
-diacritics  = 0x0300..0x036f
+precomposed     = Hash.new {|h, lang| h[lang] = {}}
+diacritics      = 0x0300..0x036f
+used_diacritics = Set.new
+
+File.load("saneo").each do |line|
+  if line =~ /^\s*key /
+    unicode_keys = line.scan(/U\d{4}/).map{|c| c[1..-1].to_i(16)}
+    used_diacritics += unicode_keys.select{|c| c.in? diacritics}
+  end
+end
 
 File.load("UnicodeData.txt").each do |line|
   code, name, type, _, _, compose, *_ = line.split(";")
@@ -17,13 +25,25 @@ File.load("UnicodeData.txt").each do |line|
   next unless type.starts_with? "L"
 
   if composed.present?
-    if composed.any?{|c| c.in? diacritics}
+    if composed.any?{|c| c.in? used_diacritics}
       lang = name.split.first
-      precomposed[lang][code] = [name, compose]
+      precomposed[lang][code] = [name, composed]
     end
   end
 end
 
 precomposed.each do |lang, precomps|
   puts "#{lang} -> #{precomps.size}"
+
+  File.save("precomposed_#{lang.downcase}.el") do |f|
+    f.puts "(quail-define-rules"
+
+    precomps.each do |precomposed, (name, composed)|
+      precomposed = [precomposed].pack("U")
+      composed    = composed.map{|c| [c].pack("U")}.join
+
+      f.puts " (\"#{composed}\" ?#{precomposed})"
+    end
+    f.puts ")"
+  end
 end
