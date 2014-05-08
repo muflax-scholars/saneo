@@ -87,7 +87,7 @@ xkb_symbols "saneo" {
     key <AC05> { [ o               , O               , parenleft       , U00F8           , Tab             , Tab             , NoSymbol        ] };
 
     key <AC06> { [ s               , S               , parenright      , U0283           , U0304           , NoSymbol        , NoSymbol        ] };
-    key <AC07> { [ n               , N               , underscore      , U014B           , U0308           , NoSymbol        , NoSymbol        ] };
+    key <AC07> { [ n               , N               , underscore      , U014B           , U0308           , U0364           , NoSymbol        ] };
     key <AC08> { [ r               , R               , slash           , U0279           , U0301           , NoSymbol        , NoSymbol        ] };
     key <AC09> { [ t               , T               , braceright      , U03B8           , U0302           , NoSymbol        , NoSymbol        ] };
     key <AC10> { [ d               , D               , period          , U00F0           , U0300           , NoSymbol        , NoSymbol        ] };
