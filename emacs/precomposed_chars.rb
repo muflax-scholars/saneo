@@ -9,8 +9,12 @@ require "unicode_utils"
 precomposed = {}
 diacritics  = 0x0300..0x036f
 
-used_diacritics = Set.new
-used_letters    = Set.new ("a".."z").map(&:ord) # assume we can Latin
+used_diacritics = Set.new %w{ ̈ ́ ̂ ̀ }.map(&:ord)
+used_letters    = Set.new (
+  # assume we can Latin
+  ("a".."z").to_a +  ("A".."Z").to_a
+).map(&:ord)
+
 
 File.load("../saneo").each do |line|
   if line =~ /^\s*key /
@@ -29,16 +33,15 @@ File.load("../saneo").each do |line|
       mod4_shift
     ].select{|c| c =~ /U\w{4}/}
 
-    diac_keys.each do |c|
-      c = c[1..-1].to_i(16)
-      used_diacritics << c if c.in? diacritics
-    end
+    # diac_keys.each do |c|
+    #   c = c[1..-1].to_i(16)
+    #   used_diacritics << c if c.in? diacritics
+    # end
 
-    letter_keys.each do |c|
-      c = c[1..-1].to_i(16)
-      used_letters << c if UnicodeUtils.char_type(c) == :Letter
-    end
-
+    # letter_keys.each do |c|
+    #   c = c[1..-1].to_i(16)
+    #   used_letters << c if UnicodeUtils.char_type(c) == :Letter
+    # end
   end
 end
 
