@@ -60,7 +60,7 @@ used_letters.to_a.product(used_diacritics.to_a).each do |letter, diacritic|
   composed = [letter, diacritic].map{|c| [c].pack("U")}.join
 
   # fill in gaps with straight pairs so that the input method is consistent
-  # precomposed[composed] ||= composed
+  precomposed[composed] ||= composed
 end
 
 puts "saving #{precomposed.size} combos..."
@@ -71,8 +71,15 @@ postfix = File.save("precomposed_postfix.el")
 [prefix, postfix].each{|f| f.puts "(quail-define-rules"}
 
 precomposed.sort_by{|c,p| p}.each do |composed, prec|
-  prefix.puts  " (\"#{composed}\" ?#{prec})"
-  postfix.puts " (\"#{composed.reverse}\" ?#{prec})"
+  output = case prec.size
+           when 1
+             "?#{prec}"
+           else
+             "[\"#{prec}\"]"
+           end
+
+  prefix.puts  " (\"#{composed}\" #{output})"
+  postfix.puts " (\"#{composed.reverse}\" #{output})"
 end
 
 [prefix, postfix].each{|f| f.puts ")"}
