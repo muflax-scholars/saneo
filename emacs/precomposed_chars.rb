@@ -72,12 +72,6 @@ used_letters.to_a.product(used_diacritics.to_a).each do |letter, diacritic|
   precomposed[composed] ||= composed
 end
 
-# make typing raw diacritics possible
-used_diacritics.each do |dia|
-  dia = [dia].pack("U")
-  precomposed["#{dia}#{dia}"] = dia
-end
-
 puts "saving #{precomposed.size} combos..."
 
 prefix  = File.save("precomposed_prefix.el")
