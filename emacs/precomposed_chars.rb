@@ -6,7 +6,7 @@
 require "muflax"
 require "unicode_utils"
 
-precomposed = Hash.new {|h, lang| h[lang] = {}}
+precomposed = {}
 diacritics  = 0x0300..0x036f
 
 used_diacritics = Set.new
@@ -45,38 +45,34 @@ File.load("../UnicodeData.txt").each do |line|
 
   if composed.present?
     if composed.any?{|c| c.in? used_diacritics}
-      lang = name.split.first
-
       prec = [code].pack("U")
-      comp = composed.map{|c| [c].pack("U")}.join
+      comp = composed.map{|c| [c].pack("U")}
 
-      precomposed[lang][comp] = prec
+      letter, diacritic = composed
+      next unless letter.in? used_letters and diacritic.in? used_diacritics
+
+      precomposed[comp.join] = prec
     end
   end
 end
 
-used_letters.zip(used_diacritics).each do |letter, diacritic|
-  composed = [letter, diacritic].pack("U")
-  lang     = UnicodeUtils.char_name(letter).split.first
+used_letters.to_a.product(used_diacritics.to_a).each do |letter, diacritic|
+  composed = [letter, diacritic].map{|c| [c].pack("U")}.join
 
   # fill in gaps with straight pairs so that the input method is consistent
-  precomposed[lang][composed] ||= composed
+  # precomposed[composed] ||= composed
 end
 
+puts "saving #{precomposed.size} combos..."
 
+prefix  = File.save("precomposed_prefix.el")
+postfix = File.save("precomposed_postfix.el")
 
-precomposed.each do |lang, precomps|
-  puts "#{lang} -> #{precomps.size}"
+[prefix, postfix].each{|f| f.puts "(quail-define-rules"}
 
-  prefix  = File.save("precomposed_#{lang.downcase}_prefix.el")
-  postfix = File.save("precomposed_#{lang.downcase}_postfix.el")
-
-  [prefix, postfix].each{|f| f.puts "(quail-define-rules"}
-
-  precomps.sort_by{|c,p| p}.each do |composed, prec|
-    prefix.puts  " (\"#{composed}\" ?#{prec})"
-    postfix.puts " (\"#{composed.reverse}\" ?#{prec})"
-  end
-
-  [prefix, postfix].each{|f| f.puts ")"}
+precomposed.sort_by{|c,p| p}.each do |composed, prec|
+  prefix.puts  " (\"#{composed}\" ?#{prec})"
+  postfix.puts " (\"#{composed.reverse}\" ?#{prec})"
 end
+
+[prefix, postfix].each{|f| f.puts ")"}
