@@ -17,8 +17,17 @@ File.load("../saneo").each do |line|
     key = line[/ \[ ( .+) \]/x, 1].whackuum(",")
     normal, shift, mod3, mod3_shift, mod4, mod4_shift, mod3_mod4 = key
 
-    letter_keys = [normal, shift, mod3, mod3_shift].select{|c| c =~ /U\w{4}/}
-    diac_keys = [mod4, mod4_shift].select{|c| c =~ /U\w{4}/}
+    letter_keys = [
+      normal,
+      shift,
+      mod3,
+      mod3_shift
+    ].select{|c| c =~ /U\w{4}/}
+
+    diac_keys = [
+      mod4,
+      mod4_shift
+    ].select{|c| c =~ /U\w{4}/}
 
     diac_keys.each do |c|
       c = c[1..-1].to_i(16)
