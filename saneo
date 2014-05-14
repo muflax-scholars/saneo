@@ -9,9 +9,8 @@ xkb_symbols "saneo" {
 
     // definition of Mod3
     key.type[Group1] = "THREE_LEVEL";
-    key <AC11> { [ ISO_Level3_Shift, ISO_Level3_Shift, NoSymbol ] };
     key <CAPS> { [ ISO_Level3_Shift, ISO_Level3_Shift, NoSymbol ] };
-    modifier_map Mod5 { <AC11>, <CAPS> };
+    modifier_map Mod5 { <CAPS> };
 
     // definition of Mod4
     key.type[Group1] = "ONE_LEVEL";
@@ -94,6 +93,7 @@ xkb_symbols "saneo" {
     key <AC08> { [ r               , R               , slash           , U0279           , U0301           , NoSymbol        , NoSymbol        ] };
     key <AC09> { [ t               , T               , braceright      , U03B8           , U0302           , NoSymbol        , NoSymbol        ] };
     key <AC10> { [ d               , D               , period          , U00F0           , U0300           , NoSymbol        , NoSymbol        ] };
+		key <AC11> { [ Menu            , Menu            , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
 
     // the one left to return
     key <BKSL> { [ NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
@@ -117,4 +117,5 @@ xkb_symbols "saneo" {
 
     // make Menu (the one left to R_Ctrl) the Kanji/IME key
     key <MENU> { [ Kanji           , Kanji           , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
+
 };
