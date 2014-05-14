@@ -9,8 +9,9 @@ xkb_symbols "saneo" {
 
     // definition of Mod3
     key.type[Group1] = "THREE_LEVEL";
-    key <CAPS> { [ ISO_Level3_Shift, ISO_Level3_Shift, NoSymbol ] };
-    modifier_map Mod5 { <CAPS> };
+    key <CAPS> { [ ISO_Level3_Shift, ISO_Level3_Shift, Menu ] };
+		key <AC11> { [ ISO_Level3_Shift, ISO_Level3_Shift, Menu ] };
+    modifier_map Mod5 { <CAPS>, <AC11> };
 
     // definition of Mod4
     key.type[Group1] = "ONE_LEVEL";
@@ -27,8 +28,8 @@ xkb_symbols "saneo" {
     key <LWIN> { [ Alt_L   ] };
     key <LALT> { [ Super_L ] };
 
-		// make ShiftR usable for other stuff
-		key <RTSH> { [ ISO_Level5_Lock, ISO_Level5_Lock, NoSymbol ] } ;
+		// the one left of return
+		key <BKSL> { [ ISO_Level5_Lock, ISO_Level5_Lock, NoSymbol ] } ;
 
     // define normal keys
     // ------------------
@@ -93,10 +94,6 @@ xkb_symbols "saneo" {
     key <AC08> { [ r               , R               , slash           , U0279           , U0301           , NoSymbol        , NoSymbol        ] };
     key <AC09> { [ t               , T               , braceright      , U03B8           , U0302           , NoSymbol        , NoSymbol        ] };
     key <AC10> { [ d               , D               , period          , U00F0           , U0300           , NoSymbol        , NoSymbol        ] };
-		key <AC11> { [ Menu            , Menu            , Menu            , Menu            , Menu            , Menu            , Menu            ] };
-
-    // the one left to return
-    key <BKSL> { [ NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
 
     // bottom row
     //             normal          , shift           , mod3            , mod3+shift      , mod4            , mod4+shift      , mod3+mod4
