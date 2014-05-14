@@ -28,6 +28,9 @@ xkb_symbols "saneo" {
     key <LWIN> { [ Alt_L   ] };
     key <LALT> { [ Super_L ] };
 
+		// make ShiftR usable for other stuff
+		key <RTSH> { [ ISO_Level5_Lock, ISO_Level5_Lock, NoSymbol ] } ;
+
     // define normal keys
     // ------------------
 
