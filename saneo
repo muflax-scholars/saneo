@@ -93,7 +93,7 @@ xkb_symbols "saneo" {
     key <AC08> { [ r               , R               , slash           , U0279           , U0301           , NoSymbol        , NoSymbol        ] };
     key <AC09> { [ t               , T               , braceright      , U03B8           , U0302           , NoSymbol        , NoSymbol        ] };
     key <AC10> { [ d               , D               , period          , U00F0           , U0300           , NoSymbol        , NoSymbol        ] };
-		key <AC11> { [ Menu            , Menu            , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
+		key <AC11> { [ Menu            , Menu            , Menu            , Menu            , Menu            , Menu            , Menu            ] };
 
     // the one left to return
     key <BKSL> { [ NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
