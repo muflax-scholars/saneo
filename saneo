@@ -28,7 +28,7 @@ xkb_symbols "saneo" {
     key <LALT> { [ Super_L ] };
 
 		// the one left of return
-		key <BKSL> { [ ISO_Level5_Lock, ISO_Level5_Lock, NoSymbol ] } ;
+		// key <BKSL> { [ ISO_Level5_Lock, ISO_Level5_Lock, NoSymbol ] } ;
 
     // define normal keys
     // ------------------
