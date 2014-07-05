@@ -94,4 +94,11 @@ precomposed.sort_by{|c,p| p}.each do |composed, prec|
   postfix.puts " (\"#{composed.reverse}\" #{output})"
 end
 
+used_diacritics.each do |diacritic|
+  # slightly prettier input
+  d = [diacritic].pack("U")
+  postfix.puts  " (\"#{d}\" [\"‌#{d}\"])"
+  postfix.puts  " (\"#{d}#{d}\" [\"#{d}\"])"
+end
+
 [prefix, postfix].each{|f| f.puts ")"}
