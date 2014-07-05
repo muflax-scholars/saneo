@@ -60,8 +60,8 @@ xkb_symbols "saneo" {
     // tilde at the beginning of the number row
     key <TLDE> { [ 0               , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
 
-    key <AE11> { [ NoSymbol        , NoSymbol        , F11             , NoSymbol        , F11             , NoSymbol        , NoSymbol        ] };
-    key <AE12> { [ NoSymbol        , NoSymbol        , F12             , NoSymbol        , F12             , NoSymbol        , NoSymbol        ] };
+    key <AE11> { [ F14             , NoSymbol        , F11             , NoSymbol        , F11             , NoSymbol        , NoSymbol        ] };
+    key <AE12> { [ F15             , NoSymbol        , F12             , NoSymbol        , F12             , NoSymbol        , NoSymbol        ] };
 
     // top row
     //             normal          , shift           , mod3            , mod3+shift      , mod4            , mod4+shift      , mod3+mod4
