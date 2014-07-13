@@ -9,8 +9,8 @@ xkb_symbols "saneo" {
 
     // definition of Mod3
     key.type[Group1] = "THREE_LEVEL";
-    key <CAPS> { [ ISO_Level3_Shift, ISO_Level3_Shift, Menu ] };
-		key <AC11> { [ ISO_Level3_Shift, ISO_Level3_Shift, Menu ] };
+		key <AC11> { [ ISO_Level3_Shift, ISO_Level3_Shift, NoSymbol ] };
+    key <CAPS> { [ ISO_Level3_Shift, ISO_Level3_Shift, NoSymbol ] };
     modifier_map Mod5 { <CAPS>, <AC11> };
 
     // definition of Mod4
@@ -28,7 +28,12 @@ xkb_symbols "saneo" {
     key <LALT> { [ Super_L ] };
 
 		// the one left of return
-		// key <BKSL> { [ ISO_Level5_Lock, ISO_Level5_Lock, NoSymbol ] } ;
+		//key <BKSL> { [ ISO_Level5_Lock, ISO_Level5_Lock ] } ;
+
+		// sticky shift
+		key <LFSH> { [ Shift_L ] };
+		key <RTSH> { [ Shift_R ] };
+
 
     // define normal keys
     // ------------------
