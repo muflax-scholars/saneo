@@ -1,0 +1,39 @@
+[ before
+
+  0 1234 5 6 7 890
+    xvlc w   k hgfq ß ł
+  T uiae o   s nrtd T
+  S C%*| p z b mjy‌̈ S
+    A W    L    F K
+
+	S -> shift
+	C -> ctrl
+	A -> alt
+	T -> mod3
+	F -> mod4
+	L -> space
+	W -> win
+	K -> kanji
+
+]
+
+[ after
+
+  0  012 34 5 67 890_ _
+    xvlc w_ _ _k hgfq
+  _ uiae o_ _ _s nrtd
+   _%*|  pz _ _b mjy‌̈
+  __  __ _ _   _ ___  _
+
+	unassigned / to move: ß ł ‌̈ z
+
+	S -> shift
+	C -> ctrl
+	A -> alt
+	T -> mod3
+	F -> mod4
+	L -> space
+	W -> win
+	K -> kanji
+
+]
