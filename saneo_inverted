@@ -6,26 +6,26 @@ xkb_symbols "saneo_inverted" {
 
     // modifier definitions
     // --------------------
-    key.type[Group1] = "THREE_LEVEL";
+    key.type[Group1] = "EIGHT_LEVEL_ALPHABETIC" ;
 
 		// modifier row
-		//             normal           , shift            , mod3     ] };
-    key <FK12> { [ NoSymbol         , NoSymbol         , NoSymbol         ] };
-    key <FK11> { [ NoSymbol         , NoSymbol         , NoSymbol         ] };
-    key <FK10> { [ NoSymbol         , NoSymbol         , NoSymbol         ] };
+    //             normal           , shift            , mod3             , mod3+shift      , mod4            , mod4+shift      , mod3+mod4
+    key <FK12> { [ NoSymbol         , NoSymbol         , NoSymbol         , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol ] };
+    key <FK11> { [ NoSymbol         , NoSymbol         , NoSymbol         , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol ] };
+    key <FK10> { [ NoSymbol         , NoSymbol         , NoSymbol         , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol ] };
 
-    key <FK09> { [ Alt_L            , Alt_L            , Alt_L            ] };
-    key <FK08> { [ Control_L        , Control_L        , Control_L        ] }; // neutral
-    key <FK07> { [ ISO_Level3_Shift , ISO_Level3_Shift , ISO_Level3_Shift ] };
-    key <FK06> { [ Super_L          , Super_L          , Super_L          ] };
-    key <FK05> { [ NoSymbol         , NoSymbol         , NoSymbol         ] };
+    key <FK09> { [ Alt_L            , Alt_L            , Alt_L            , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol ] };
+    key <FK08> { [ Control_L        , Control_L        , Control_L        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol ] }; // neutral
+    key <FK07> { [ ISO_Level3_Shift , ISO_Level3_Shift , ISO_Level3_Shift , NoSymbol        , space           , NoSymbol        , NoSymbol ] };
+    key <FK06> { [ Super_L          , Super_L          , Super_L          , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol ] };
+    key <FK05> { [ NoSymbol         , NoSymbol         , NoSymbol         , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol ] };
 
-    key <FK04> { [ space            , space            , Menu             ] };
-    key <FK03> { [ ISO_Level5_Shift , ISO_Level5_Shift , ISO_Level5_Shift ] }; // neutral
-    key <FK02> { [ Shift_L          , Shift_L          , Shift_L          ] };
-    key <FK01> { [ Kanji            , Kanji            , Kanji            ] };
+    key <FK04> { [ space            , space            , Menu             , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol ] };
+    key <FK03> { [ ISO_Level5_Shift , ISO_Level5_Shift , space            , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol ] }; // neutral
+    key <FK02> { [ Shift_L          , Shift_L          , Shift_L          , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol ] };
+    key <FK01> { [ Kanji            , Kanji            , Kanji            , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol ] };
 
-    key <ESC>  { [ NoSymbol         , NoSymbol         , NoSymbol ] };
+    key <ESC>  { [ NoSymbol         , NoSymbol         , NoSymbol         , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol ] };
 
     // definition of Mod3
     modifier_map Mod5 { <FK07> };
@@ -40,31 +40,29 @@ xkb_symbols "saneo_inverted" {
     modifier_map Shift { <FK02> };
 
     // page up/down block
-		//             normal          , shift           , mod3     ] };
-    key <PGDN> { [ Prior           , NoSymbol        , NoSymbol ] };
-    key <END>  { [ Up              , NoSymbol        , NoSymbol ] };
-    key <DELE> { [ Next            , NoSymbol        , NoSymbol ] };
+    //             normal           , shift            , mod3             , mod3+shift      , mod4            , mod4+shift      , mod3+mod4
+    key <PGDN> { [ Prior            , NoSymbol         , NoSymbol         , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol ] };
+    key <END>  { [ Up               , NoSymbol         , NoSymbol         , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol ] };
+    key <DELE> { [ Next             , NoSymbol         , NoSymbol         , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol ] };
 
-    key <PGUP> { [ Left            , NoSymbol        , NoSymbol ] };
-    key <HOME> { [ Down            , NoSymbol        , NoSymbol ] };
-    key <INS>  { [ Right           , NoSymbol        , NoSymbol ] };
+    key <PGUP> { [ Left             , NoSymbol         , NoSymbol         , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol ] };
+    key <HOME> { [ Down             , NoSymbol         , NoSymbol         , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol ] };
+    key <INS>  { [ Right            , NoSymbol         , NoSymbol         , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol ] };
 
     // curse of the ancients block
-    //             normal          , shift           , mod3     ] };
-    // key <PRSC> { [ NoSymbol       , NoSymbol        , NoSymbol ] };
-    // key <SCLK> { [ NoSymbol       , NoSymbol        , NoSymbol ] };
-    // key <PAUS> { [ NoSymbol       , NoSymbol        , NoSymbol ] };
+    // key <PRSC> { [ NoSymbol         , NoSymbol         , NoSymbol         , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol ] };
+    // key <SCLK> { [ NoSymbol         , NoSymbol         , NoSymbol         , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol ] };
+    // key <PAUS> { [ NoSymbol         , NoSymbol         , NoSymbol         , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol ] };
 
     // cursor keys
-		//             normal          , shift           , mod3     ] };
-    // key <RGHT> { [ NoSymbol       , NoSymbol        , NoSymbol ] };
-    // key <DOWN> { [ NoSymbol       , NoSymbol        , NoSymbol ] };
-    // key <LEFT> { [ NoSymbol       , NoSymbol        , NoSymbol ] };
-    // key <UP>   { [ NoSymbol       , NoSymbol        , NoSymbol ] };
+    // key <RGHT> { [ NoSymbol         , NoSymbol         , NoSymbol         , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol ] };
+    // key <DOWN> { [ NoSymbol         , NoSymbol         , NoSymbol         , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol ] };
+    // key <LEFT> { [ NoSymbol         , NoSymbol         , NoSymbol         , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol ] };
+    // key <UP>   { [ NoSymbol         , NoSymbol         , NoSymbol         , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol ] };
 
     // define normal keys
     // ------------------
-    key.type[Group1]="EIGHT_LEVEL_ALPHABETIC" ;
+    key.type[Group1] = "EIGHT_LEVEL_ALPHABETIC" ;
 
     // number row
     //             normal          , shift           , mod3            , mod3+shift      , mod4            , mod4+shift      , mod3+mod4
@@ -115,7 +113,7 @@ xkb_symbols "saneo_inverted" {
 
     key <AD08> { [ o               , O               , parenleft       , U00F8           , Tab             , Tab             , NoSymbol        ] };
 
-    key <AD07> { [ 4               , ssharp          , U1E9E           , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
+    key <AD07> { [ 4               , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
     key <AD06> { [ 5               , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
     key <AD05> { [ 6               , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
 
@@ -135,7 +133,7 @@ xkb_symbols "saneo_inverted" {
 
     key <AE09> { [ z               , Z               , at              , U0292           , NoSymbol        , NoSymbol        , NoSymbol        ] };
 
-    key <AE08> { [ 0               , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
+    key <AE08> { [ 0               , ssharp          , U1E9E           , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
     key <AE07> { [ 1               , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
     key <AE06> { [ 2               , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
     key <AE05> { [ 3               , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
