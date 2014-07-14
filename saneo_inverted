@@ -143,7 +143,7 @@ xkb_symbols "saneo_inverted" {
     key <AE03> { [ m               , M               , dollar          , NoSymbol        , U0327           , NoSymbol        , NoSymbol        ] };
     key <AE02> { [ j               , J               , ampersand       , NoSymbol        , U0323           , NoSymbol        , NoSymbol        ] };
     key <AE01> { [ y               , Y               , numbersign      , yen             , U0325           , NoSymbol        , NoSymbol        ] };
-    key <TLDE> { [ NoSymbol        , NoSymbol         , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
+    key <TLDE> { [ NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
 
 		// useless ex-modifiers
     //                normal          , shift           , mod3            , mod3+shift      , mod4            , mod4+shift      , mod3+mod4
