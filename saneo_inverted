@@ -14,10 +14,10 @@ xkb_symbols "saneo_inverted" {
     key <FK11> { [ Shift_L          , Shift_L          , Shift_L          , Shift_L         , Shift_L         , Shift_L         , Shift_L          ] };
     key <FK10> { [ Shift_L          , Shift_L          , Shift_L          , Shift_L         , Shift_L         , Shift_L         , Shift_L          ] };
 
-    key <FK09> { [ Alt_L            , Alt_L            , Alt_L            , Alt_L           , Alt_L           , Alt_L           , Alt_L            ] };
+    key <FK09> { [ Super_L          , Super_L          , Super_L          , Super_L         , Super_L         , Super_L         , Super_L          ] };
     key <FK08> { [ Control_L        , Control_L        , Control_L        , Control_L       , Control_L       , Control_L       , Control_L        ] };
     key <FK07> { [ ISO_Level3_Shift , ISO_Level3_Shift , ISO_Level3_Shift , ISO_Level3_Shift, space           , ISO_Level3_Shift, ISO_Level3_Shift ] };
-    key <FK06> { [ Super_L          , Super_L          , Super_L          , Super_L         , Super_L         , Super_L         , Super_L          ] };
+    key <FK06> { [ Alt_L            , Alt_L            , Alt_L            , Alt_L           , Alt_L           , Alt_L           , Alt_L            ] };
     key <FK05> { [ Shift_L          , Shift_L          , Shift_L          , Shift_L         , Shift_L         , Shift_L         , Shift_L          ] };
 
     key <FK04> { [ space            , space            , Menu             , space           , space           , space           , space            ] };
