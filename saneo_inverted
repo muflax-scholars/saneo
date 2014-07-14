@@ -10,22 +10,22 @@ xkb_symbols "saneo_inverted" {
 
 		// modifier row
     //             normal           , shift            , mod3             , mod3+shift      , mod4            , mod4+shift      , mod3+mod4
-    key <FK12> { [ NoSymbol         , NoSymbol         , NoSymbol         , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol ] };
-    key <FK11> { [ NoSymbol         , NoSymbol         , NoSymbol         , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol ] };
-    key <FK10> { [ NoSymbol         , NoSymbol         , NoSymbol         , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol ] };
+    key <FK12> { [ Shift_L          , Shift_L          , Shift_L          , Shift_L         , Shift_L         , Shift_L         , Shift_L          ] };
+    key <FK11> { [ Shift_L          , Shift_L          , Shift_L          , Shift_L         , Shift_L         , Shift_L         , Shift_L          ] };
+    key <FK10> { [ Shift_L          , Shift_L          , Shift_L          , Shift_L         , Shift_L         , Shift_L         , Shift_L          ] };
 
-    key <FK09> { [ Alt_L            , Alt_L            , Alt_L            , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol ] };
-    key <FK08> { [ Control_L        , Control_L        , Control_L        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol ] }; // neutral
-    key <FK07> { [ ISO_Level3_Shift , ISO_Level3_Shift , ISO_Level3_Shift , NoSymbol        , space           , NoSymbol        , NoSymbol ] };
-    key <FK06> { [ Super_L          , Super_L          , Super_L          , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol ] };
-    key <FK05> { [ NoSymbol         , NoSymbol         , NoSymbol         , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol ] };
+    key <FK09> { [ Alt_L            , Alt_L            , Alt_L            , Alt_L           , Alt_L           , Alt_L           , Alt_L            ] };
+    key <FK08> { [ Control_L        , Control_L        , Control_L        , Control_L       , Control_L       , Control_L       , Control_L        ] };
+    key <FK07> { [ ISO_Level3_Shift , ISO_Level3_Shift , ISO_Level3_Shift , ISO_Level3_Shift, space           , ISO_Level3_Shift, ISO_Level3_Shift ] };
+    key <FK06> { [ Super_L          , Super_L          , Super_L          , Super_L         , Super_L         , Super_L         , Super_L          ] };
+    key <FK05> { [ Shift_L          , Shift_L          , Shift_L          , Shift_L         , Shift_L         , Shift_L         , Shift_L          ] };
 
-    key <FK04> { [ space            , space            , Menu             , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol ] };
-    key <FK03> { [ ISO_Level5_Shift , ISO_Level5_Shift , space            , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol ] }; // neutral
-    key <FK02> { [ Shift_L          , Shift_L          , Shift_L          , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol ] };
-    key <FK01> { [ Kanji            , Kanji            , Kanji            , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol ] };
+    key <FK04> { [ space            , space            , Menu             , space           , space           , space           , space            ] };
+    key <FK03> { [ ISO_Level5_Shift , ISO_Level5_Shift , space            , ISO_Level5_Shift, ISO_Level5_Shift, ISO_Level5_Shift, ISO_Level5_Shift ] };
+    key <FK02> { [ Shift_L          , Shift_L          , Shift_L          , Shift_L         , Shift_L         , Shift_L         , Shift_L          ] };
+    key <FK01> { [ Kanji            , Kanji            , Kanji            , Kanji           , Kanji           , Kanji           , Kanji            ] };
 
-    key <ESC>  { [ NoSymbol         , NoSymbol         , NoSymbol         , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol ] };
+    key <ESC>  { [ Shift_L          , Shift_L          , Shift_L          , Shift_L         , Shift_L         , Shift_L         , Shift_L          ] };
 
     // definition of Mod3
     modifier_map Mod5 { <FK07> };
