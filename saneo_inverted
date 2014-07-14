@@ -17,13 +17,13 @@ xkb_symbols "saneo_inverted" {
     key <FK09> { [ Alt_L            , Alt_L            , Alt_L            ] };
     key <FK08> { [ Control_L        , Control_L        , Control_L        ] }; // neutral
     key <FK07> { [ ISO_Level3_Shift , ISO_Level3_Shift , ISO_Level3_Shift ] };
-    key <FK06> { [ Kanji            , Kanji            , Kanji            ] };
+    key <FK06> { [ Super_L          , Super_L          , Super_L          ] };
     key <FK05> { [ NoSymbol         , NoSymbol         , NoSymbol         ] };
 
-    key <FK04> { [ Menu             , Menu             , Execute          ] };
+    key <FK04> { [ space            , space            , Menu             ] };
     key <FK03> { [ ISO_Level5_Shift , ISO_Level5_Shift , ISO_Level5_Shift ] }; // neutral
     key <FK02> { [ Shift_L          , Shift_L          , Shift_L          ] };
-    key <FK01> { [ Super_L          , Super_L          , Super_L          ] };
+    key <FK01> { [ Kanji            , Kanji            , Kanji            ] };
 
     key <ESC>  { [ NoSymbol         , NoSymbol         , NoSymbol ] };
 
