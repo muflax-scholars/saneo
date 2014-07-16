@@ -20,7 +20,7 @@ xkb_symbols "saneo_inverted" {
     key <FK06> { [ Alt_L            , Alt_L            , Alt_L            , Alt_L            , Alt_L           , Alt_L           , Alt_L            ] };
     key <FK05> { [ Kanji            , Kanji            , Kanji            , Kanji            , Kanji           , Kanji           , Kanji            ] };
 
-    key <FK04> { [ ISO_Level3_Latch , ISO_Level3_Latch , ISO_Level3_Latch , ISO_Level3_Latch , space           , ISO_Level3_Shift, ISO_Level3_Shift ] };
+    key <FK04> { [ ISO_Level3_Latch , ISO_Level3_Latch , ISO_Level3_Latch , ISO_Level3_Latch , space           , ISO_Level3_Latch, ISO_Level3_Latch ] };
     key <FK03> { [ ISO_Level5_Shift , ISO_Level5_Shift , space            , ISO_Level5_Shift , ISO_Level5_Shift, ISO_Level5_Shift, ISO_Level5_Shift ] };
     key <FK02> { [ Shift_L          , Shift_L          , Shift_L          , Shift_L          , Shift_L         , Shift_L         , Shift_L          ] };
     key <FK01> { [ Alt_L            , Alt_L            , Alt_L            , Alt_L            , Alt_L           , Alt_L           , Alt_L            ] };
@@ -28,7 +28,7 @@ xkb_symbols "saneo_inverted" {
     key <ESC>  { [ Shift_L          , Shift_L          , Shift_L          , Shift_L          , Shift_L         , Shift_L         , Shift_L          ] };
 
     // definition of Mod3
-    modifier_map Mod5 { <FK07> };
+    modifier_map Mod5 { <FK04> };
 
     // definition of Mod4
     modifier_map Mod3 { <FK03> };
