@@ -66,7 +66,7 @@ xkb_symbols "saneo_inverted" {
 
     // number row
     //             normal          , shift           , mod3            , mod3+shift      , mod4            , mod4+shift      , mod3+mod4
-    key <RTSH> { [ 0               , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
+    key <RTSH> { [ Menu            , NoSymbol        , 0               , NoSymbol        , 0               , NoSymbol        , NoSymbol        ] };
     key <AB10> { [ F1              , NoSymbol        , 1               , NoSymbol        , 1               , NoSymbol        , NoSymbol        ] };
     key <AB09> { [ F2              , NoSymbol        , 2               , NoSymbol        , 2               , NoSymbol        , NoSymbol        ] };
 
