@@ -100,7 +100,7 @@ xkb_symbols "saneo_inverted" {
     key <AC03> { [ h               , H               , greater         , U026E           , U0309           , NoSymbol        , NoSymbol        ] };
     key <AC02> { [ g               , G               , quotedbl        , U2E18           , U030C           , NoSymbol        , NoSymbol        ] };
     key <AC01> { [ f               , F               , bracketright    , U0278           , U0303           , NoSymbol        , NoSymbol        ] };
-    key <CAPS> { [ q               , Q               , NoSymbol        , U0294           , U0307           , NoSymbol        , NoSymbol        ] };
+    key <CAPS> { [ q               , Q               , plus            , U0294           , U0307           , NoSymbol        , NoSymbol        ] };
 
     // home row
     //             normal          , shift           , mod3            , mod3+shift      , mod4            , mod4+shift      , mod3+mod4
