@@ -20,8 +20,8 @@ xkb_symbols "saneo_inverted" {
     key <FK06> { [ Alt_L            , Alt_L            , Alt_L            , Alt_L            , Alt_L           , Alt_L           , Alt_L            ] };
     key <FK05> { [ Kanji            , Kanji            , Kanji            , Kanji            , Kanji           , Kanji           , Kanji            ] };
 
-    key <FK04> { [ ISO_Level3_Latch , ISO_Level3_Latch , ISO_Level3_Latch , ISO_Level3_Latch , space           , ISO_Level3_Latch, ISO_Level3_Latch ] };
-    key <FK03> { [ ISO_Level5_Shift , ISO_Level5_Shift , space            , ISO_Level5_Shift , ISO_Level5_Shift, ISO_Level5_Shift, ISO_Level5_Shift ] };
+    key <FK04> { [ ISO_Level3_Latch , ISO_Level3_Latch , ISO_Level3_Latch , ISO_Level3_Latch , ISO_Level5_Lock , ISO_Level3_Latch, ISO_Level3_Latch ] };
+    key <FK03> { [ ISO_Level5_Latch , ISO_Level5_Latch , ISO_Level5_Lock  , ISO_Level5_Latch , ISO_Level5_Latch, ISO_Level5_Latch, ISO_Level5_Latch ] };
     key <FK02> { [ Shift_L          , Shift_L          , Shift_L          , Shift_L          , Shift_L         , Shift_L         , Shift_L          ] };
     key <FK01> { [ Alt_L            , Alt_L            , Alt_L            , Alt_L            , Alt_L           , Alt_L           , Alt_L            ] };
 
