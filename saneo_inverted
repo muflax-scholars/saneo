@@ -91,9 +91,9 @@ xkb_symbols "saneo_inverted" {
 
     key <AC08> { [ w               , W               , exclam          , exclamdown      , Insert          , Insert          , NoSymbol        ] };
 
-    key <AC07> { [ 7               , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
-    key <AC06> { [ 8               , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
-    key <AC05> { [ 9               , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
+    key <AC07> { [ NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
+    key <AC06> { [ NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
+    key <AC05> { [ NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
 
     key <AC04> { [ k               , K               , equal           , NoSymbol        , U0306           , NoSymbol        , NoSymbol        ] };
 
@@ -113,9 +113,9 @@ xkb_symbols "saneo_inverted" {
 
     key <AD08> { [ o               , O               , parenleft       , U00F8           , Tab             , Tab             , NoSymbol        ] };
 
-    key <AD07> { [ 4               , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
-    key <AD06> { [ 5               , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
-    key <AD05> { [ 6               , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
+    key <AD07> { [ NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
+    key <AD06> { [ NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
+    key <AD05> { [ NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
 
     key <AD04> { [ s               , S               , parenright      , U0283           , U0304           , NoSymbol        , NoSymbol        ] };
 
@@ -133,10 +133,10 @@ xkb_symbols "saneo_inverted" {
 
     key <AE09> { [ z               , Z               , minus           , sterling        , End             , End             , NoSymbol        ] };
 
-    key <AE08> { [ 0               , ssharp          , U1E9E           , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
-    key <AE07> { [ 1               , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
-    key <AE06> { [ 2               , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
-    key <AE05> { [ 3               , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
+    key <AE08> { [ ssharp          , U1E9E           , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
+    key <AE07> { [ NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
+    key <AE06> { [ NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
+    key <AE05> { [ NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
 
     key <AE04> { [ b               , B               , plus            , NoSymbol        , U0328           , NoSymbol        , NoSymbol        ] };
 
