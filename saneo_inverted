@@ -41,18 +41,18 @@ xkb_symbols "saneo_inverted" {
 
     // page up/down block
     //             normal           , shift            , mod3             , mod3+shift      , mod4            , mod4+shift      , mod3+mod4
-    key <PGDN> { [ Prior            , NoSymbol         , NoSymbol         , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol ] };
-    key <END>  { [ Up               , NoSymbol         , NoSymbol         , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol ] };
-    key <DELE> { [ Next             , NoSymbol         , NoSymbol         , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol ] };
+    key <PGDN> { [ Prior            , Prior            , Prior            , Prior           , Prior           , Prior           , Prior       ] };
+    key <END>  { [ Up               , Up               , Up               , Up              , Up              , Up              , Up          ] };
+    key <DELE> { [ Next             , Next             , Next             , Next            , Next            , Next            , Next        ] };
 
-    key <PGUP> { [ Left             , NoSymbol         , NoSymbol         , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol ] };
-    key <HOME> { [ Down             , NoSymbol         , NoSymbol         , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol ] };
-    key <INS>  { [ Right            , NoSymbol         , NoSymbol         , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol ] };
+    key <PGUP> { [ Left             , Left             , Left             , Left            , Left            , Left            , Left        ] };
+    key <HOME> { [ Down             , Down             , Down             , Down            , Down            , Down            , Down        ] };
+    key <INS>  { [ Right            , Right            , Right            , Right           , Right           , Right           , Right       ] };
 
     // curse of the ancients block
-    key <PAUS> { [ Control_L        , NoSymbol         , NoSymbol         , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol ] };
-    // key <SCLK> { [ NoSymbol         , NoSymbol         , NoSymbol         , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol ] };
-    key <PRSC> { [ Alt_L            , NoSymbol         , NoSymbol         , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol ] };
+    key <PAUS> { [ Control_L        , NoSymbol         , NoSymbol         , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol    ] };
+    // key <SCLK> { [ NoSymbol         , NoSymbol         , NoSymbol         , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol    ] };
+    key <PRSC> { [ Alt_L            , NoSymbol         , NoSymbol         , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol    ] };
 
     // cursor keys
     // key <RGHT> { [ NoSymbol         , NoSymbol         , NoSymbol         , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol ] };
