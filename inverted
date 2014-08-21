@@ -22,50 +22,13 @@
   0  123 45 67 890__ _
     xvlc w_ _ _k hgfq
   _ uiae o_ _ _s nrtd
-   %*|pz __ _ _b mjy_
+   %*|pz ß_ _ _b mjy_
   __  __ _ _   _ ___  _
 
-	unassigned / to move: ß? ł ‌̈?
-
-	{ mod3-ish keys
-		- ~
-		- [
-		- '
-		- <
-		- !
-		- =
-		- >
-		- "
-		- ]
-		- `
-		- ,
-		- {
-		- \
-		- )
-		- _
-		- /
-		- }
-		- .
-		- %
-		- ^
-		- ?
-		- -
-		- @
-		- +
-		- $
-		- &
-		- #
-		- ‌̈ (and other accents?)
-		- ß
-		- |
-		- *
-		- :
-		- numbers? or just move C-x 0-3
-
-		a lot of these would be better with an IME, like "\e -> €", "\u -> _" etc
-
-		-. /\ ," *| -> rest could be mod3'd
-
+	{ to improve
+		- much better numbers, probably on the right mod4 block (diacritics can be emacs'd)
+		- instead of "mod4-key + key" for a diacritic char, use "pseudo-compose-key + key" somewhere good-ish
+		- somehow magically solve the navigation key problem, so I don't need a thumb all the time, maybe through nav-mode
 	}
 
 ]
