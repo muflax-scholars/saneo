@@ -16,7 +16,7 @@ xkb_symbols "saneo_inverted" {
 
     key <FK09> { [ Super_L          , Super_L          , Super_L          , Super_L          , Super_L          , Super_L         , Super_L          ] };
     key <FK08> { [ Control_L        , Control_L        , Control_L        , Control_L        , Control_L        , Control_L       , Control_L        ] };
-    key <FK07> { [ space            , space            , space            , space            , space            , space           , space            ] };
+    key <FK07> { [ space            , space            , U00B7            , space            , U00B7            , space           , space            ] };
     key <FK06> { [ Alt_L            , Alt_L            , Alt_L            , Alt_L            , Alt_L            , Alt_L           , Alt_L            ] };
     key <FK05> { [ Kanji            , Kanji            , Kanji            , Kanji            , Kanji            , Kanji           , Kanji            ] };
 
