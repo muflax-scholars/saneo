@@ -97,9 +97,9 @@ xkb_symbols "saneo_inverted" {
 
     key <AC04> { [ k               , K               , equal           , NoSymbol        , U0306           , NoSymbol        , NoSymbol        ] };
 
-    key <AC03> { [ h               , H               , greater         , U026E           , U0309           , NoSymbol        , NoSymbol        ] };
-    key <AC02> { [ g               , G               , quotedbl        , U2E18           , U030C           , NoSymbol        , NoSymbol        ] };
-    key <AC01> { [ f               , F               , bracketright    , U0278           , U0303           , NoSymbol        , NoSymbol        ] };
+    key <AC03> { [ h               , H               , greater         , U026E           , 4               , NoSymbol        , NoSymbol        ] };
+    key <AC02> { [ g               , G               , quotedbl        , U2E18           , 5               , NoSymbol        , NoSymbol        ] };
+    key <AC01> { [ f               , F               , bracketright    , U0278           , 6               , NoSymbol        , NoSymbol        ] };
     key <CAPS> { [ q               , Q               , plus            , U0294           , U0307           , NoSymbol        , NoSymbol        ] };
 
     // home row
@@ -117,12 +117,12 @@ xkb_symbols "saneo_inverted" {
     key <AD06> { [ NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
     key <AD05> { [ NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
 
-    key <AD04> { [ s               , S               , parenright      , U0283           , U0304           , NoSymbol        , NoSymbol        ] };
+    key <AD04> { [ s               , S               , parenright      , U0283           , 0               , NoSymbol        , NoSymbol        ] };
 
-    key <AD03> { [ n               , N               , underscore      , U014B           , U0308           , U0364           , NoSymbol        ] };
-    key <AD02> { [ r               , R               , slash           , U0279           , U0301           , NoSymbol        , NoSymbol        ] };
-    key <AD01> { [ t               , T               , braceright      , U03B8           , U0302           , NoSymbol        , NoSymbol        ] };
-    key <TAB>  { [ d               , D               , period          , U00F0           , U0300           , NoSymbol        , NoSymbol        ] };
+    key <AD03> { [ n               , N               , underscore      , U014B           , 1               , U0364           , NoSymbol        ] };
+    key <AD02> { [ r               , R               , slash           , U0279           , 2               , NoSymbol        , NoSymbol        ] };
+    key <AD01> { [ t               , T               , braceright      , U03B8           , 3               , NoSymbol        , NoSymbol        ] };
+    key <TAB>  { [ d               , D               , period          , U00F0           , NoSymol         , NoSymbol        , NoSymbol        ] };
 
     // bottom row
     //             normal          , shift           , mod3            , mod3+shift      , mod4            , mod4+shift      , mod3+mod4
@@ -140,9 +140,9 @@ xkb_symbols "saneo_inverted" {
 
     key <AE04> { [ b               , B               , plus            , NoSymbol        , U0328           , NoSymbol        , NoSymbol        ] };
 
-    key <AE03> { [ m               , M               , dollar          , NoSymbol        , U0327           , NoSymbol        , NoSymbol        ] };
-    key <AE02> { [ j               , J               , ampersand       , NoSymbol        , U0323           , NoSymbol        , NoSymbol        ] };
-    key <AE01> { [ y               , Y               , numbersign      , yen             , U0325           , NoSymbol        , NoSymbol        ] };
+    key <AE03> { [ m               , M               , dollar          , NoSymbol        , 7               , NoSymbol        , NoSymbol        ] };
+    key <AE02> { [ j               , J               , ampersand       , NoSymbol        , 8               , NoSymbol        , NoSymbol        ] };
+    key <AE01> { [ y               , Y               , numbersign      , yen             , 9               , NoSymbol        , NoSymbol        ] };
     key <TLDE> { [ NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
 
 		// useless ex-modifiers
