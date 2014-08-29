@@ -25,7 +25,7 @@ xkb_symbols "saneo_inverted" {
     key <FK02> { [ Shift_L          , Shift_L          , Shift_L          , Shift_L          , Shift_L          , Shift_L         , Shift_L          ] };
     key <FK01> { [ Alt_L            , Alt_L            , Alt_L            , Alt_L            , Alt_L            , Alt_L           , Alt_L            ] };
 
-    key <ESC>  { [ Shift_L          , Shift_L          , Shift_L          , Shift_L          , Shift_L          , Shift_L         , Shift_L          ] };
+    key <ESC>  { [ Caps_Lock       , Caps_Lock         , Caps_Lock        , Caps_Lock        , Caps_Lock        , Caps_Lock       , Caps_Lock        ] };
 
     // definition of Mod3
     modifier_map Mod5 { <FK04> };
