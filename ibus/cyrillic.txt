@@ -73,7 +73,7 @@ DEF_FULL_WIDTH_LETTER = FALSE
 MAX_KEY_LENGTH = 2
 
 ### Valid input chars.
-VALID_INPUT_CHARS = ABCDEFGHIJKLMNOPQRSTUVWYZabcdefghijklmnopqrstuvwxyzßẞłŁ|
+VALID_INPUT_CHARS = ABCDEFGHIJKLMNOPQRSTUVWYZabcdefghijklmnopqrstuvwxyzßẞ·
 
 END_DEFINITION
 
@@ -135,8 +135,6 @@ Q	Ь	0
 q	ь	0
 ß	ъ	0
 ẞ	Ъ	0
-Ł	Ъ	0
-ł	ъ	0
 
 ### use y as a prefix for the digraphs
 YA	Я	0
@@ -167,29 +165,30 @@ ys	ш	0
 yu	ю	0
 yz	ж	0
 
-### Kazakh letters, use | as prefix
-|C	Ҫ	0
-|E	Ә	0
-|H	Һ	0
-|I	Ұ	0
-|K	Ҡ	0
-|N	Ң	0
-|O	Ө	0
-|Q	Қ	0
-|R	Ғ	0
-|U	Ү	0
-|c	ҫ	0
-|e	ә	0
-|h	һ	0
-|i	ұ	0
-|k	ҡ	0
-|n	ң	0
-|o	ө	0
-|q	қ	0
-|r	ғ	0
-|u	ү	0
-### make the | typable by itself; note that "||" doesn't work for some reason
-|Y	|	0
-|y	|	0
+### Kazakh letters, use · as prefix
+·C	Ҫ	0
+·E	Ә	0
+·H	Һ	0
+·I	Ұ	0
+·K	Ҡ	0
+·N	Ң	0
+·O	Ө	0
+·Q	Қ	0
+·R	Ғ	0
+·U	Ү	0
+·c	ҫ	0
+·e	ә	0
+·h	һ	0
+·i	ұ	0
+·k	ҡ	0
+·n	ң	0
+·o	ө	0
+·q	қ	0
+·r	ғ	0
+·u	ү	0
+
+### make the · typable by itself
+··	·	0
+··	·	0
 
 END_TABLE
