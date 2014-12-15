@@ -115,7 +115,7 @@ xkb_symbols "saneo" {
 
 		// space key
     //             normal          , shift           , mod3            , mod3+shift      , mod4            , mod4+shift      , mod3+mod4
-    key <SPCE> { [ space           , space           , space           , U00B7           , space           , space           , space           ] };
+    key <SPCE> { [ space           , space           , U00B7           , U00B7           , space           , space           , space           ] };
 
     // make Menu (the one left to R_Ctrl) the Kanji/IME key
     key <MENU> { [ Kanji           , Kanji           , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        , NoSymbol        ] };
