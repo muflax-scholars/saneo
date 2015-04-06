@@ -85,7 +85,7 @@ xkb_symbols "saneo_inverted" {
     key <LFSH>	{ [	F12   	, NoSymbol	, F12 	, NoSymbol  	, F12 	, NoSymbol  	, NoSymbol 	] };
 
     // top row
-    //        	   	normal  	, shift   	, mod3        	, mod3+shift	, mod4     	, mod4+shift	, mod3+mod4
+    //        	   	normal  	, shift   	, mod3        	, mod3+shift	, mod4     	, mod4+shift	, mod3+mod4	
     key <AC12>	{ [	x       	, X       	, asciitilde  	, U0281     	, Escape   	, Escape    	, NoSymbol 	] };
     key <AC11>	{ [	v       	, V       	, bracketleft 	, U03B2     	, BackSpace	, BackSpace 	, NoSymbol 	] };
     key <AC10>	{ [	l       	, L       	, apostrophe  	, U026B     	, Return   	, Return    	, NoSymbol 	] };
@@ -99,13 +99,13 @@ xkb_symbols "saneo_inverted" {
     //        	   	        	          	              	            	           	            	           	
     key <AC04>	{ [	k       	, K       	, equal       	, NoSymbol  	, U0306    	, NoSymbol  	, NoSymbol 	] };
     //        	   	        	          	              	            	           	            	           	
-    key <AC03>	{ [	h       	, H       	, greater     	, U026E     	, 4        	, NoSymbol  	, NoSymbol 	] };
-    key <AC02>	{ [	g       	, G       	, quotedbl    	, U2E18     	, 5        	, NoSymbol  	, NoSymbol 	] };
-    key <AC01>	{ [	f       	, F       	, bracketright	, U0278     	, 6        	, NoSymbol  	, NoSymbol 	] };
+    key <AC03>	{ [	h       	, H       	, greater     	, U026E     	, NoSymbol 	, NoSymbol  	, NoSymbol 	] };
+    key <AC02>	{ [	g       	, G       	, quotedbl    	, U2E18     	, NoSymbol 	, NoSymbol  	, NoSymbol 	] };
+    key <AC01>	{ [	f       	, F       	, bracketright	, U0278     	, NoSymbol 	, NoSymbol  	, NoSymbol 	] };
     key <CAPS>	{ [	q       	, Q       	, plus        	, U0294     	, U0307    	, NoSymbol  	, NoSymbol 	] };
 
     // home row
-    //        	   	normal  	, shift   	, mod3      	, mod3+shift	, mod4    	, mod4+shift	, mod3+mod4
+    //        	   	normal  	, shift   	, mod3      	, mod3+shift	, mod4    	, mod4+shift	, mod3+mod4	
     key <RTRN>	{ [	NoSymbol	, NoSymbol	, NoSymbol  	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };
     //        	   	        	          	            	            	          	            	           	
     key <AD12>	{ [	u       	, U       	, comma     	, U0259     	, Left    	, Left      	, NoSymbol 	] };
@@ -119,15 +119,15 @@ xkb_symbols "saneo_inverted" {
     key <AD06>	{ [	NoSymbol	, NoSymbol	, NoSymbol  	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };
     key <AD05>	{ [	NoSymbol	, NoSymbol	, NoSymbol  	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };
     //        	   	        	          	            	            	          	            	           	
-    key <AD04>	{ [	s       	, S       	, parenright	, U0283     	, 0       	, NoSymbol  	, NoSymbol 	] };
+    key <AD04>	{ [	s       	, S       	, parenright	, U0283     	, NoSymbol	, NoSymbol  	, NoSymbol 	] };
     //        	   	        	          	            	            	          	            	           	
-    key <AD03>	{ [	n       	, N       	, underscore	, U014B     	, 1       	, U0364     	, NoSymbol 	] };
-    key <AD02>	{ [	r       	, R       	, slash     	, U0279     	, 2       	, NoSymbol  	, NoSymbol 	] };
-    key <AD01>	{ [	t       	, T       	, braceright	, U03B8     	, 3       	, NoSymbol  	, NoSymbol 	] };
+    key <AD03>	{ [	n       	, N       	, underscore	, U014B     	, NoSymbol	, U0364     	, NoSymbol 	] };
+    key <AD02>	{ [	r       	, R       	, slash     	, U0279     	, NoSymbol	, NoSymbol  	, NoSymbol 	] };
+    key <AD01>	{ [	t       	, T       	, braceright	, U03B8     	, NoSymbol	, NoSymbol  	, NoSymbol 	] };
     key <TAB> 	{ [	d       	, D       	, period    	, U00F0     	, NoSymol 	, NoSymbol  	, NoSymbol 	] };
 
     // bottom row
-    //        	   	normal  	, shift   	, mod3       	, mod3+shift  	, mod4    	, mod4+shift	, mod3+mod4
+    //        	   	normal  	, shift   	, mod3       	, mod3+shift  	, mod4    	, mod4+shift	, mod3+mod4	
     key <BKSP>	{ [	percent 	, grave   	, at         	, NoSymbol    	, Home    	, Home      	, NoSymbol 	] };
     key <AE12>	{ [	asterisk	, colon   	, ssharp     	, NoSymbol    	, Home    	, Home      	, NoSymbol 	] };
     key <AE11>	{ [	bar     	, colon   	, asciicircum	, NoSymbol    	, Prior   	, Prior     	, NoSymbol 	] };
@@ -142,9 +142,9 @@ xkb_symbols "saneo_inverted" {
     //        	   	        	          	             	              	          	            	           	
     key <AE04>	{ [	b       	, B       	, plus       	, NoSymbol    	, U0328   	, NoSymbol  	, NoSymbol 	] };
     //        	   	        	          	             	              	          	            	           	
-    key <AE03>	{ [	m       	, M       	, dollar     	, NoSymbol    	, 7       	, NoSymbol  	, NoSymbol 	] };
-    key <AE02>	{ [	j       	, J       	, ampersand  	, NoSymbol    	, 8       	, NoSymbol  	, NoSymbol 	] };
-    key <AE01>	{ [	y       	, Y       	, numbersign 	, yen         	, 9       	, NoSymbol  	, NoSymbol 	] };
+    key <AE03>	{ [	m       	, M       	, dollar     	, NoSymbol    	, NoSymbol	, NoSymbol  	, NoSymbol 	] };
+    key <AE02>	{ [	j       	, J       	, ampersand  	, NoSymbol    	, NoSymbol	, NoSymbol  	, NoSymbol 	] };
+    key <AE01>	{ [	y       	, Y       	, numbersign 	, yen         	, NoSymbol	, NoSymbol  	, NoSymbol 	] };
     key <TLDE>	{ [	NoSymbol	, NoSymbol	, NoSymbol   	, NoSymbol    	, NoSymbol	, NoSymbol  	, NoSymbol 	] };
 
 		// useless ex-modifiers
