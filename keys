@@ -1,0 +1,71 @@
+a-z A-Z -> shift	26+1
+äöüÄÖÜß         	7
+F1-F12          	12
+0-9             	10
+
+LRUD (PU PD)?                        	4+2
+Esc Del Ret Bck (Ins)                	4+1
+SPC                                  	1
+Tab ? (could be worked around, maybe)	1
+ctrl (alt) for emacs                 	1+1
+(win) for windows                    	1
+
+
+.,!?        	4  	       	
+-_          	2  	       	
+()[]{}<>(«»)	8+2	       	
+/           	1  	       	
+"'\         	3  	       	
++-*|;=      	6  	       	
+%@~$&#`^    	8  	       	
+
+total	32+2
+
+(a few minor extra symbols like €ə etc)
+
+
+inverted,	thumbs have 2 good keys
+normal,  	thumbs have 2 good + 2 okish keys
+
+current (inverted, but rest is almost identical):
+
+|	x  	v	l	c		w		 		k		h	g	f	q	(ß)	
+|	~  	[	'	<		!		 		=		>	"	]	`	   	
+|	E  	D	R	B		I		 		 		 	 	 	 	   	
+ 	   	 	 	 		 		 		 		 	 	 	 	   	
+|	u  	i	a	e		o		 		s		n	r	t	d	   	
+|	,  	{	\	;		(		 		)		_	/	}	.	   	
+|	L  	U	D	R		T		 		 		 	 	 	 	   	
+ 	   	 	 	 		 		 		 		 	 	 	 	   	
+|	%/`	*	|	p		z		ß		b		m	j	y	 	   	
+|	@  	^	?	-		@		 		+		$	&	#	 	   	
+|	   	U	D	 		 		 		 		 	 	 	 	   	
+
+|	win	ctrl	spc	alt		m3	m4	shift
+
+modified:
+
+|no	     	x	v	l	c		w	   	 	  	k 		h	g	f	q	(ß)  	
+|sh	     	X	V	L	C		W	   	 	  	K 		H	G	F	Q	     	
+|m3	     	 	 	 	 		 	   	 	  	  		 	 	 	 	     	
+|s3	     	 	 	 	 		 	   	 	  	  		 	 	 	 	     	
+   	     	 	 	 	 		 	   	 	  	  		 	 	 	 	     	
+|no	     	u	i	a	e		o	   	 	  	s 		n	r	t	d	     	
+|sh	     	U	I	A	E		O	   	 	  	S 		N	R	T	D	     	
+|m3	     	ü	 	ä	 		ö	   	 	  	ß?		 	 	 	 	     	
+|s3	     	Ü	 	Ä	 		Ö	   	 	  	  		 	 	 	 	     	
+   	     	 	 	 	 		 	   	 	  	  		 	 	 	 	     	
+|no	shift	 	 	 	p		z	   	ß	  	b 		m	j	y	 	shift	
+|sh	     	 	 	 	P		Z	   	 	  	B 		M	J	Y	 	shift	
+|m3	     	 	 	 	 		 	   	 	  	  		 	 	 	 	     	
+|s3	     	 	 	 	 		 	   	 	  	  		 	 	 	 	     	
+   	     	 	 	 	 		 	   	 	  	  		 	 	 	 	     	
+|no	     	 	 	 	 		 	spc	 	m3	  		 	 	 	 	     	
+|sh	     	 	 	 	 		 	spc	 	m3	  		 	 	 	 	     	
+|m3	     	 	 	 	 		 	spc	 	m3	  		 	 	 	 	     	
+|s3	     	 	 	 	 		 	spc	 	m3	  		 	 	 	 	     	
+
+probably put shift on the side for the pinkies then :/
+
+
+30 left
