@@ -63,28 +63,28 @@ xkb_symbols "saneo" {
   key <AD04> { [	c     	, C    	, less        	, cent      	, Delete   	, Delete    	, NoSymbol 	] };	
   key <AD05> { [	w     	, W    	, exclam      	, exclamdown	, Insert   	, Insert    	, NoSymbol 	] };	
                 	      	       	              	            	           	            	           	    	
-  key <AD06> { [	k     	, K    	, equal       	, NoSymbol  	, U0306    	, NoSymbol  	, NoSymbol 	] };	
-  key <AD07> { [	h     	, H    	, greater     	, U026E     	, U0309    	, NoSymbol  	, NoSymbol 	] };	
-  key <AD08> { [	g     	, G    	, quotedbl    	, U2E18     	, U030C    	, NoSymbol  	, NoSymbol 	] };	
-  key <AD09> { [	f     	, F    	, bracketright	, U0278     	, U0303    	, NoSymbol  	, NoSymbol 	] };	
-  key <AD10> { [	q     	, Q    	, NoSymbol    	, U0294     	, U0307    	, NoSymbol  	, NoSymbol 	] };	
+  key <AD06> { [	k     	, K    	, equal       	, NoSymbol  	, NoSymbol 	, NoSymbol  	, NoSymbol 	] };	
+  key <AD07> { [	h     	, H    	, greater     	, U026E     	, NoSymbol 	, NoSymbol  	, NoSymbol 	] };	
+  key <AD08> { [	g     	, G    	, quotedbl    	, U2E18     	, NoSymbol 	, NoSymbol  	, NoSymbol 	] };	
+  key <AD09> { [	f     	, F    	, bracketright	, U0278     	, NoSymbol 	, NoSymbol  	, NoSymbol 	] };	
+  key <AD10> { [	q     	, Q    	, NoSymbol    	, U0294     	, NoSymbol 	, NoSymbol  	, NoSymbol 	] };	
                 	      	       	              	            	           	            	           	    	
-  key <AD11> { [	ssharp	, U1E9E	, grave       	, NoSymbol  	, U030A    	, NoSymbol  	, NoSymbol 	] };	
+  key <AD11> { [	ssharp	, U1E9E	, grave       	, NoSymbol  	, NoSymbol 	, NoSymbol  	, NoSymbol 	] };	
   key <AD12> { [	U0142 	, U0141	, NoSymbol    	, NoSymbol  	, NoSymbol 	, NoSymbol  	, NoSymbol 	] };	
 
   // home row
-  //            	normal	, shift	, mod3      	, mod3+shift	, mod4 	, mod4+shift	, mod3+mod4	    	
-  key <AC01> { [	u     	, U    	, comma     	, U0259     	, Left 	, Left      	, NoSymbol 	] };	
-  key <AC02> { [	i     	, I    	, braceleft 	, U203D     	, Up   	, Up        	, NoSymbol 	] };	
-  key <AC03> { [	a     	, A    	, backslash 	, U00E6     	, Down 	, Down      	, NoSymbol 	] };	
-  key <AC04> { [	e     	, E    	, semicolon 	, EuroSign  	, Right	, Right     	, NoSymbol 	] };	
-  key <AC05> { [	o     	, O    	, parenleft 	, U00F8     	, Tab  	, Tab       	, NoSymbol 	] };	
-                	      	       	            	            	       	            	           	    	
-  key <AC06> { [	s     	, S    	, parenright	, U0283     	, U0304	, NoSymbol  	, NoSymbol 	] };	
-  key <AC07> { [	n     	, N    	, underscore	, U014B     	, U0308	, U0364     	, NoSymbol 	] };	
-  key <AC08> { [	r     	, R    	, slash     	, U0279     	, U0301	, NoSymbol  	, NoSymbol 	] };	
-  key <AC09> { [	t     	, T    	, braceright	, U03B8     	, U0302	, NoSymbol  	, NoSymbol 	] };	
-  key <AC10> { [	d     	, D    	, period    	, U00F0     	, U0300	, NoSymbol  	, NoSymbol 	] };	
+  //            	normal	, shift	, mod3      	, mod3+shift	, mod4    	, mod4+shift	, mod3+mod4	    	
+  key <AC01> { [	u     	, U    	, comma     	, U0259     	, Left    	, Left      	, NoSymbol 	] };	
+  key <AC02> { [	i     	, I    	, braceleft 	, U203D     	, Up      	, Up        	, NoSymbol 	] };	
+  key <AC03> { [	a     	, A    	, backslash 	, U00E6     	, Down    	, Down      	, NoSymbol 	] };	
+  key <AC04> { [	e     	, E    	, semicolon 	, EuroSign  	, Right   	, Right     	, NoSymbol 	] };	
+  key <AC05> { [	o     	, O    	, parenleft 	, U00F8     	, Tab     	, Tab       	, NoSymbol 	] };	
+                	      	       	            	            	          	            	           	    	
+  key <AC06> { [	s     	, S    	, parenright	, U0283     	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
+  key <AC07> { [	n     	, N    	, underscore	, U014B     	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
+  key <AC08> { [	r     	, R    	, slash     	, U0279     	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
+  key <AC09> { [	t     	, T    	, braceright	, U03B8     	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
+  key <AC10> { [	d     	, D    	, period    	, U00F0     	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
 
   // bottom row
   //            	normal  	, shift	, mod3       	, mod3+shift  	, mod4    	, mod4+shift	, mod3+mod4	    	
@@ -94,15 +94,15 @@ xkb_symbols "saneo" {
   key <AB04> { [	p       	, P    	, minus      	, sterling    	, End     	, End       	, NoSymbol 	] };	
   key <AB05> { [	z       	, Z    	, at         	, U0292       	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
                 	        	       	             	              	          	            	           	    	
-  key <AB06> { [	b       	, B    	, plus       	, NoSymbol    	, U0328   	, NoSymbol  	, NoSymbol 	] };	
-  key <AB07> { [	m       	, M    	, dollar     	, NoSymbol    	, U0327   	, NoSymbol  	, NoSymbol 	] };	
-  key <AB08> { [	j       	, J    	, ampersand  	, NoSymbol    	, U0323   	, NoSymbol  	, NoSymbol 	] };	
-  key <AB09> { [	y       	, Y    	, numbersign 	, yen         	, U0325   	, NoSymbol  	, NoSymbol 	] };	
+  key <AB06> { [	b       	, B    	, plus       	, NoSymbol    	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
+  key <AB07> { [	m       	, M    	, dollar     	, NoSymbol    	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
+  key <AB08> { [	j       	, J    	, ampersand  	, NoSymbol    	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
+  key <AB09> { [	y       	, Y    	, numbersign 	, yen         	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
   key <AB10> { [	U0308   	, F13  	, F13        	, F13         	, F13     	, F13       	, F13      	] };	
 
   // thumb keys
   //            	normal	, shift	, mod3    	, mod3+shift	, mod4    	, mod4+shift	, mod3+mod4	    	
-  key <SPCE> { [	space 	, space	, U00B7   	, U00B7     	, space   	, space     	, space    	] };	
+  key <SPCE> { [	space 	, space	, Menu    	, Menu      	, Menu    	, Menu      	, Menu     	] };	
   key <MENU> { [	Kanji 	, Kanji	, NoSymbol	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
 
 };
