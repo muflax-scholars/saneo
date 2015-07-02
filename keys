@@ -58,7 +58,7 @@ modified:
 |no	     	u	i	a	e		o	    	    	  	s		n	r	t	d	     	
 |sh	     	U	I	A	E		O	    	    	  	S		N	R	T	D	     	
 |m3	     	,	{	?	!		(	    	    	  	)		_	/	}	.	     	
-|s3	     	 	 	 	 		 	    	    	  	 		 	 	 	 	     	
+|s3	     	 	 	 	 		 	    	    	  	 		 	 	 	·	     	
    	     	 	 	 	 		 	    	    	  	 		 	 	 	 	     	
 |no	shift	%	*	|	p		z	    	ß   	  	b		m	j	y	;	shift	
 |sh	shift	`	@	:	P		Z	    	    	  	B		M	J	Y	^	shift	
@@ -69,10 +69,6 @@ modified:
 |sh	     	 	 	 	 		 	ctrl	spc 	m3	 		 	 	 	 	     	
 |m3	     	 	 	 	 		 	ctrl	menu	m3	 		 	 	 	 	     	
 |s3	     	 	 	 	 		 	ctrl	menu	m3	 		 	 	 	 	     	
-
-^
-
-30 left
 
 probably put shift on the side for the pinkies then :/
 
@@ -91,7 +87,7 @@ m3-spc?
 
 plan:
 
-- integrate the umlauts into m3
+# - integrate the umlauts into m3
 - simplify and reorder the m3 layer a bit
 - remove alt keys
 - simplify win keys
