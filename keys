@@ -52,23 +52,25 @@ modified:
 
 |no	     	x	v	l	c		w	    	    	  	k		h	g	f	q	(ß)  	
 |sh	     	X	V	L	C		W	    	    	  	K		H	G	F	Q	     	
-|m3	     	 	 	 	 		 	    	    	  	 		 	 	 	 	     	
-|s3	     	 	 	 	 		 	    	    	  	 		 	 	 	 	     	
+|m3	     	~	[	'	<		\	    	    	  	=		>	"	]	`	     	
+|s3	     	 	 	 	«		 	    	    	  	 		»	 	 	 	     	
    	     	 	 	 	 		 	    	    	  	 		 	 	 	 	     	
 |no	     	u	i	a	e		o	    	    	  	s		n	r	t	d	     	
 |sh	     	U	I	A	E		O	    	    	  	S		N	R	T	D	     	
-|m3	     	 	 	 	 		 	    	    	  	 		 	 	 	 	     	
+|m3	     	,	{	?	!		(	    	    	  	)		_	/	}	.	     	
 |s3	     	 	 	 	 		 	    	    	  	 		 	 	 	 	     	
    	     	 	 	 	 		 	    	    	  	 		 	 	 	 	     	
-|no	shift	 	 	 	p		z	    	ß   	  	b		m	j	y	 	shift	
-|sh	shift	 	 	 	P		Z	    	    	  	B		M	J	Y	 	shift	
-|m3	     	ü	ö	ä	 		 	    	    	  	 		 	 	 	 	     	
+|no	shift	%	*	|	p		z	    	ß   	  	b		m	j	y	;	shift	
+|sh	shift	`	@	:	P		Z	    	    	  	B		M	J	Y	^	shift	
+|m3	     	ü	ö	ä	-		@	    	    	  	+		$	&	#	 	     	
 |s3	     	Ü	Ö	Ä	 		 	    	    	  	 		 	 	 	 	     	
    	     	 	 	 	 		 	    	    	  	 		 	 	 	 	     	
 |no	     	 	 	 	 		 	ctrl	spc 	m3	 		 	 	 	 	     	
 |sh	     	 	 	 	 		 	ctrl	spc 	m3	 		 	 	 	 	     	
 |m3	     	 	 	 	 		 	ctrl	menu	m3	 		 	 	 	 	     	
 |s3	     	 	 	 	 		 	ctrl	menu	m3	 		 	 	 	 	     	
+
+^
 
 30 left
 
@@ -89,7 +91,8 @@ m3-spc?
 
 plan:
 
-- simplify the m3 + s3 layer
+- integrate the umlauts into m3
+- simplify and reorder the m3 layer a bit
 - remove alt keys
 - simplify win keys
 - remove/simplify ctrl in firefox
