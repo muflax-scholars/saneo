@@ -19,8 +19,7 @@ xkb_symbols "saneo" {
   modifier_map Mod3 { <RALT> };
 
   // definition of Ctrl
-  key <LSGT> { [	Control_L	] };	
-  modifier_map Control { <LSGT> , <LCTL>, <RCTL> };
+  modifier_map Control { <LCTL>, <RCTL> };
 
   // swap left Win and Alt
   key <LWIN> { [	Alt_L  	] };	
@@ -88,11 +87,12 @@ xkb_symbols "saneo" {
 
   // bottom row
   //            	normal   	, shift      	, mod3      	, mod3+shift	, mod4    	, mod4+shift	, mod3+mod4	    	
-  key <AB01> { [	percent  	, grave      	, odiaeresis	, Odiaeresis	, Home    	, Home      	, NoSymbol 	] };	
-  key <AB02> { [	asterisk 	, at         	, adiaeresis	, Adiaeresis	, Prior   	, Prior     	, NoSymbol 	] };	
-  key <AB03> { [	bar      	, colon      	, udiaeresis	, Udiaeresis	, Next    	, Next      	, NoSymbol 	] };	
-  key <AB04> { [	p        	, P          	, minus     	, sterling  	, End     	, End       	, NoSymbol 	] };	
-  key <AB05> { [	z        	, Z          	, at        	, U0292     	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
+  key <LSGT> { [	percent  	, grave      	, odiaeresis	, Odiaeresis	, Home    	, Home      	, NoSymbol 	] };	
+  key <AB01> { [	asterisk 	, at         	, adiaeresis	, Adiaeresis	, Prior   	, Prior     	, NoSymbol 	] };	
+  key <AB02> { [	bar      	, colon      	, udiaeresis	, Udiaeresis	, Next    	, Next      	, NoSymbol 	] };	
+  key <AB03> { [	p        	, P          	, minus     	, sterling  	, End     	, End       	, NoSymbol 	] };	
+  key <AB04> { [	z        	, Z          	, at        	, U0292     	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
+  key <AB05> { [	ssharp   	, U1E9E      	, grave     	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
                 	         	             	            	            	          	            	           	    	
   key <AB06> { [	b        	, B          	, plus      	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
   key <AB07> { [	m        	, M          	, dollar    	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
