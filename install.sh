@@ -4,6 +4,5 @@
 
 /bin/cp ./saneo         	/usr/share/X11/xkb/symbols/saneo
 /bin/cp ./saneo_inverted	/usr/share/X11/xkb/symbols/saneo_inverted
-/bin/cp ./saneo_shifted 	/usr/share/X11/xkb/symbols/saneo_shifted
 
 skb.sh
