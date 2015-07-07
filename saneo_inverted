@@ -127,25 +127,25 @@ xkb_symbols "saneo_inverted" {
   key <TAB> 	{ [	d       	, D       	, period    	, U00B7     	, NoSymol 	, NoSymbol  	, NoSymbol 	] };
 
   // bottom row
-  //        	   	normal   	, shift      	, mod3      	, mod3+shift  	, mod4    	, mod4+shift	, mod3+mod4	
-  key <BKSP>	{ [	percent  	, grave      	, odiaeresis	, Odiaeresis  	, Home    	, Home      	, NoSymbol 	] };
-  key <AE12>	{ [	asterisk 	, at         	, adiaeresis	, Adiaeresis  	, Home    	, Home      	, NoSymbol 	] };
-  key <AE11>	{ [	bar      	, colon      	, udiaeresis	, Udiaeresis  	, Prior   	, Prior     	, NoSymbol 	] };
-  key <AE10>	{ [	p        	, P          	, minus     	, questiondown	, Next    	, Next      	, NoSymbol 	] };
-  //        	   	         	             	            	              	          	            	           	
-  key <AE09>	{ [	z        	, Z          	, at        	, sterling    	, End     	, End       	, NoSymbol 	] };
-  //        	   	         	             	            	              	          	            	           	
-  key <AE08>	{ [	ssharp   	, U1E9E      	, NoSymbol  	, NoSymbol    	, NoSymbol	, NoSymbol  	, NoSymbol 	] };
-  key <AE07>	{ [	NoSymbol 	, NoSymbol   	, NoSymbol  	, NoSymbol    	, NoSymbol	, NoSymbol  	, NoSymbol 	] };
-  key <AE06>	{ [	NoSymbol 	, NoSymbol   	, NoSymbol  	, NoSymbol    	, NoSymbol	, NoSymbol  	, NoSymbol 	] };
-  key <AE05>	{ [	NoSymbol 	, NoSymbol   	, NoSymbol  	, NoSymbol    	, NoSymbol	, NoSymbol  	, NoSymbol 	] };
-  //        	   	         	             	            	              	          	            	           	
-  key <AE04>	{ [	b        	, B          	, plus      	, NoSymbol    	, U0328   	, NoSymbol  	, NoSymbol 	] };
-  //        	   	         	             	            	              	          	            	           	
-  key <AE03>	{ [	m        	, M          	, dollar    	, NoSymbol    	, NoSymbol	, NoSymbol  	, NoSymbol 	] };
-  key <AE02>	{ [	j        	, J          	, ampersand 	, NoSymbol    	, NoSymbol	, NoSymbol  	, NoSymbol 	] };
-  key <AE01>	{ [	y        	, Y          	, numbersign	, yen         	, NoSymbol	, NoSymbol  	, NoSymbol 	] };
-  key <TLDE>	{ [	semicolon	, asciicircum	, NoSymbol  	, NoSymbol    	, NoSymbol	, NoSymbol  	, NoSymbol 	] };
+  //        	   	normal   	, shift      	, mod3       	, mod3+shift  	, mod4    	, mod4+shift	, mod3+mod4	
+  key <BKSP>	{ [	percent  	, grave      	, odiaeresis 	, Odiaeresis  	, Home    	, Home      	, NoSymbol 	] };
+  key <AE12>	{ [	asterisk 	, at         	, adiaeresis 	, Adiaeresis  	, Home    	, Home      	, NoSymbol 	] };
+  key <AE11>	{ [	colon    	, bar        	, udiaeresis 	, Udiaeresis  	, Prior   	, Prior     	, NoSymbol 	] };
+  key <AE10>	{ [	p        	, P          	, minus      	, questiondown	, Next    	, Next      	, NoSymbol 	] };
+  //        	   	         	             	             	              	          	            	           	
+  key <AE09>	{ [	z        	, Z          	, at         	, sterling    	, End     	, End       	, NoSymbol 	] };
+  //        	   	         	             	             	              	          	            	           	
+  key <AE08>	{ [	ssharp   	, U1E9E      	, NoSymbol   	, NoSymbol    	, NoSymbol	, NoSymbol  	, NoSymbol 	] };
+  key <AE07>	{ [	NoSymbol 	, NoSymbol   	, NoSymbol   	, NoSymbol    	, NoSymbol	, NoSymbol  	, NoSymbol 	] };
+  key <AE06>	{ [	NoSymbol 	, NoSymbol   	, NoSymbol   	, NoSymbol    	, NoSymbol	, NoSymbol  	, NoSymbol 	] };
+  key <AE05>	{ [	NoSymbol 	, NoSymbol   	, NoSymbol   	, NoSymbol    	, NoSymbol	, NoSymbol  	, NoSymbol 	] };
+  //        	   	         	             	             	              	          	            	           	
+  key <AE04>	{ [	b        	, B          	, plus       	, NoSymbol    	, U0328   	, NoSymbol  	, NoSymbol 	] };
+  //        	   	         	             	             	              	          	            	           	
+  key <AE03>	{ [	m        	, M          	, dollar     	, NoSymbol    	, NoSymbol	, NoSymbol  	, NoSymbol 	] };
+  key <AE02>	{ [	j        	, J          	, ampersand  	, NoSymbol    	, NoSymbol	, NoSymbol  	, NoSymbol 	] };
+  key <AE01>	{ [	y        	, Y          	, numbersign 	, yen         	, NoSymbol	, NoSymbol  	, NoSymbol 	] };
+  key <TLDE>	{ [	semicolon	, asciicircum	, asciicircum	, NoSymbol    	, NoSymbol	, NoSymbol  	, NoSymbol 	] };
 
 		// useless ex-modifiers
   //           	   	normal  	, shift   	, mod3    	, mod3+shift	, mod4    	, mod4+shift	, mod3+mod4

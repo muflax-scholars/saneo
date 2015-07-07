@@ -58,12 +58,13 @@ modified:
 |no	     	u	i	a	e		o	    	    	  	s		n	r	t	d	     	
 |sh	     	U	I	A	E		O	    	    	  	S		N	R	T	D	     	
 |m3	     	,	{	?	!		(	    	    	  	)		_	/	}	.	     	
+$  	     	 	(	 	 		{	    	    	  	}		 	.	)	/	     	
 |s3	     	 	 	 	 		 	    	    	  	 		 	 	 	·	     	
    	     	 	 	 	 		 	    	    	  	 		 	 	 	 	     	
-|no	shift	%	*	|	p		z	    	ß   	  	b		m	j	y	;	shift	
-|sh	shift	`	@	:	P		Z	    	    	  	B		M	J	Y	^	shift	
-|m3	     	ü	ö	ä	-		@	    	    	  	+		$	&	#	 	     	
-|s3	     	Ü	Ö	Ä	 		 	    	    	  	 		 	 	 	 	     	
+|no	shift	%	*	:	p		z	    	ß   	  	b		m	j	y	;	shift	
+|sh	shift	`	@	|	P		Z	    	    	  	B		M	J	Y	^	shift	
+|m3	     	ö	ä	ü	-		@	    	    	  	+		$	&	#	^	     	
+|s3	     	Ö	Ä	Ü	 		 	    	    	  	 		 	 	 	 	     	
    	     	 	 	 	 		 	    	    	  	 		 	 	 	 	     	
 |no	     	 	 	 	 		 	ctrl	spc 	m3	 		 	 	 	 	     	
 |sh	     	 	 	 	 		 	ctrl	spc 	m3	 		 	 	 	 	     	
@@ -88,7 +89,7 @@ m3-spc?
 plan:
 
 # - integrate the umlauts into m3
-- simplify and reorder the m3 layer a bit
+# - simplify and reorder the m3 layer a bit
 - remove alt keys
 - simplify win keys
 - remove/simplify ctrl in firefox
@@ -100,3 +101,4 @@ uncertain:
 - remove m4
 - modal layer in emacs
 - flip the keyboard
+- change m3 a bit more

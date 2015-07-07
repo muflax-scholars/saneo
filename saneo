@@ -86,19 +86,19 @@ xkb_symbols "saneo" {
   key <AC10> { [	d     	, D    	, period    	, U00B7     	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
 
   // bottom row
-  //            	normal   	, shift      	, mod3      	, mod3+shift	, mod4    	, mod4+shift	, mod3+mod4	    	
-  key <LSGT> { [	percent  	, grave      	, odiaeresis	, Odiaeresis	, Home    	, Home      	, NoSymbol 	] };	
-  key <AB01> { [	asterisk 	, at         	, adiaeresis	, Adiaeresis	, Prior   	, Prior     	, NoSymbol 	] };	
-  key <AB02> { [	bar      	, colon      	, udiaeresis	, Udiaeresis	, Next    	, Next      	, NoSymbol 	] };	
-  key <AB03> { [	p        	, P          	, minus     	, sterling  	, End     	, End       	, NoSymbol 	] };	
-  key <AB04> { [	z        	, Z          	, at        	, U0292     	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
-  key <AB05> { [	ssharp   	, U1E9E      	, grave     	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
-                	         	             	            	            	          	            	           	    	
-  key <AB06> { [	b        	, B          	, plus      	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
-  key <AB07> { [	m        	, M          	, dollar    	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
-  key <AB08> { [	j        	, J          	, ampersand 	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
-  key <AB09> { [	y        	, Y          	, numbersign	, yen       	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
-  key <AB10> { [	semicolon	, asciicircum	, NoSymbol  	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
+  //            	normal   	, shift      	, mod3       	, mod3+shift	, mod4    	, mod4+shift	, mod3+mod4	    	
+  key <LSGT> { [	percent  	, grave      	, odiaeresis 	, Odiaeresis	, Home    	, Home      	, NoSymbol 	] };	
+  key <AB01> { [	asterisk 	, at         	, adiaeresis 	, Adiaeresis	, Prior   	, Prior     	, NoSymbol 	] };	
+  key <AB02> { [	colon    	, bar        	, udiaeresis 	, Udiaeresis	, Next    	, Next      	, NoSymbol 	] };	
+  key <AB03> { [	p        	, P          	, minus      	, sterling  	, End     	, End       	, NoSymbol 	] };	
+  key <AB04> { [	z        	, Z          	, at         	, U0292     	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
+  key <AB05> { [	ssharp   	, U1E9E      	, grave      	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
+                	         	             	             	            	          	            	           	    	
+  key <AB06> { [	b        	, B          	, plus       	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
+  key <AB07> { [	m        	, M          	, dollar     	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
+  key <AB08> { [	j        	, J          	, ampersand  	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
+  key <AB09> { [	y        	, Y          	, numbersign 	, yen       	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
+  key <AB10> { [	semicolon	, asciicircum	, asciicircum	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
 
   // thumb keys
   //            	normal	, shift	, mod3    	, mod3+shift	, mod4    	, mod4+shift	, mod3+mod4	    	
