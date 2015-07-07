@@ -73,9 +73,6 @@ $  	     	 	(	 	 		{	    	    	  	}		 	.	)	/
 
 probably put shift on the side for the pinkies then :/
 
-could push a few symbols on m3+shift, like m3: >, s3: »
-so overall, all the m3s would fit ok-ish, and many would be in the same position
-
 open problems:
 
 ctrl in terminal (C-c, C-d, C-t, C-r)
@@ -91,7 +88,8 @@ plan:
 # - integrate the umlauts into m3
 # - simplify and reorder the m3 layer a bit
 - remove alt keys
-- simplify win keys
+# - simplify win keys
+- remap / move win keys, if necessary
 - remove/simplify ctrl in firefox
 - remove/simplify ctrl in terminal
 - simplify m4
