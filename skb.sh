@@ -8,9 +8,10 @@ for id in $(xinput | ng "USB Keyboard" | ng -o "id=\d+" | ng -o "\d+"); do
   setxkbmap -device $id saneo_inverted || exit 1
 done
 
-for id in $(xinput | ng "X4 Keyboard" | ng -o "id=\d+" | ng -o "\d+"); do
-  setxkbmap -device $id saneo_shifted || exit 1
+for id in $(xinput | ng "ErgoDox" | ng -o "id=\d+" | ng -o "\d+"); do
+  setxkbmap -device $id saneo_ergodox || exit 1
 done
+
 
 xset r rate 300 65
 if [[ $(hostname) == "azathoth" ]]; then

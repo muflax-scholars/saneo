@@ -4,5 +4,6 @@
 
 /bin/cp ./saneo         	/usr/share/X11/xkb/symbols/saneo
 /bin/cp ./saneo_inverted	/usr/share/X11/xkb/symbols/saneo_inverted
+/bin/cp ./saneo_ergodox 	/usr/share/X11/xkb/symbols/saneo_ergodox
 
 skb.sh
