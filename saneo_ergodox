@@ -14,37 +14,32 @@ xkb_symbols "saneo" {
   key <RTSH> { [	ISO_Level3_Latch	, ISO_Level3_Latch	, NoSymbol	] };	
   modifier_map Mod5 { <RTSH> };
 
-  // definition of Mod4
-  key.type[Group1] = "ONE_LEVEL";
-  key <RALT> { [	ISO_Level5_Shift	] };
-  modifier_map Mod3 { <RALT> };
-
   // define normal keys
   // ------------------
 
   key.type[Group1]="EIGHT_LEVEL_ALPHABETIC" ;
 
   // number row
-  //            	normal  	, shift   	, mod3    	, mod3+shift	, mod4    	, mod4+shift	, mod3+mod4	    	
-  # key <AE10> { [  	0       	, NoSymbol	, NoSymbol	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
-                	        	          	          	            	          	            	           	    	
-  key <AE01> { [	1       	, NoSymbol	, NoSymbol	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
-  key <AE02> { [	2       	, NoSymbol	, NoSymbol	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
-  key <AE03> { [	3       	, NoSymbol	, NoSymbol	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
-  key <AE04> { [	4       	, NoSymbol	, NoSymbol	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
-  key <AE05> { [	5       	, NoSymbol	, NoSymbol	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
-                	        	          	          	            	          	            	           	    	
-  # key <> { [  	6       	, NoSymbol	, NoSymbol	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
-                	        	          	          	            	          	            	           	    	
-  # key <> { [  	6       	, NoSymbol	, NoSymbol	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
-                	        	          	          	            	          	            	           	    	
-  key <AE06> { [	6       	, NoSymbol	, NoSymbol	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
-  key <AE07> { [	7       	, NoSymbol	, NoSymbol	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
-  key <AE08> { [	8       	, NoSymbol	, NoSymbol	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
-  key <AE09> { [	9       	, NoSymbol	, NoSymbol	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
-  key <AE10> { [	0       	, NoSymbol	, NoSymbol	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
-                	        	          	          	            	          	            	           	    	
-  # key <> { [  	NoSymbol	, NoSymbol	, NoSymbol	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
+  //              	normal  	, shift   	, mod3    	, mod3+shift	, mod4    	, mod4+shift	, mod3+mod4	    	
+  # key <AE10> { [	0       	, NoSymbol	, NoSymbol	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
+                  	        	          	          	            	          	            	           	    	
+  key <AE01> { [  	1       	, NoSymbol	, NoSymbol	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
+  key <AE02> { [  	2       	, NoSymbol	, NoSymbol	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
+  key <AE03> { [  	3       	, NoSymbol	, NoSymbol	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
+  key <AE04> { [  	4       	, NoSymbol	, NoSymbol	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
+  key <AE05> { [  	5       	, NoSymbol	, NoSymbol	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
+                  	        	          	          	            	          	            	           	    	
+  # key <> { [    	6       	, NoSymbol	, NoSymbol	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
+                  	        	          	          	            	          	            	           	    	
+  # key <> { [    	6       	, NoSymbol	, NoSymbol	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
+                  	        	          	          	            	          	            	           	    	
+  key <AE06> { [  	6       	, NoSymbol	, NoSymbol	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
+  key <AE07> { [  	7       	, NoSymbol	, NoSymbol	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
+  key <AE08> { [  	8       	, NoSymbol	, NoSymbol	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
+  key <AE09> { [  	9       	, NoSymbol	, NoSymbol	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
+  key <AE10> { [  	0       	, NoSymbol	, NoSymbol	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
+                  	        	          	          	            	          	            	           	    	
+  # key <> { [    	NoSymbol	, NoSymbol	, NoSymbol	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
 
   // top row
   //            	normal  	, shift   	, mod3        	, mod3+shift    	, mod4     	, mod4+shift	, mod3+mod4	    	
