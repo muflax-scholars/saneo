@@ -18,47 +18,46 @@ xkb_symbols "saneo" {
   key <RALT> { [	ISO_Level3_Latch	, ISO_Level3_Latch	, NoSymbol	, NoSymbol	] };	
   modifier_map Mod5 { <RALT> };
 
-
   // top row
-  //            	normal	, shift	, mod3    	, mod3+shift	    	
-  key <AB02> { [	x     	, X    	, NoSymbol	, NoSymbol  	] };	
-  key <AB04> { [	v     	, V    	, NoSymbol	, NoSymbol  	] };	
-  key <AC09> { [	l     	, L    	, NoSymbol	, NoSymbol  	] };	
-  key <AB03> { [	c     	, C    	, NoSymbol	, NoSymbol  	] };	
-  key <AD02> { [	w     	, W    	, NoSymbol	, NoSymbol  	] };	
-                	      	       	          	            	    	
-  key <AC08> { [	k     	, K    	, NoSymbol	, NoSymbol  	] };	
-  key <AC06> { [	h     	, H    	, NoSymbol	, NoSymbol  	] };	
-  key <AC05> { [	g     	, G    	, NoSymbol	, NoSymbol  	] };	
-  key <AC04> { [	f     	, F    	, NoSymbol	, NoSymbol  	] };	
-  key <AD01> { [	q     	, Q    	, NoSymbol	, NoSymbol  	] };	
+  //            	normal	, Level3_Latchshift	, mod3	, mod3+shift	    	
+  key <AB02> { [	x     	, X                	, x   	, X         	] };	
+  key <AB04> { [	v     	, V                	, v   	, V         	] };	
+  key <AC09> { [	l     	, L                	, l   	, L         	] };	
+  key <AB03> { [	c     	, C                	, c   	, C         	] };	
+  key <AD02> { [	w     	, W                	, w   	, W         	] };	
+                	      	                   	      	            	    	
+  key <AC08> { [	k     	, K                	, k   	, K         	] };	
+  key <AC06> { [	h     	, H                	, h   	, H         	] };	
+  key <AC05> { [	g     	, G                	, g   	, G         	] };	
+  key <AC04> { [	f     	, F                	, f   	, F         	] };	
+  key <AD01> { [	q     	, Q                	, q   	, Q         	] };	
 
   // home row
   //            	normal	, shift	, mod3      	, mod3+shift	    	
   key <AD07> { [	u     	, U    	, udiaeresis	, Udiaeresis	] };	
-  key <AD08> { [	i     	, I    	, NoSymbol  	, NoSymbol  	] };	
+  key <AD08> { [	i     	, I    	, i         	, I         	] };	
   key <AC01> { [	a     	, A    	, adiaeresis	, Adiaeresis	] };	
-  key <AD03> { [	e     	, E    	, NoSymbol  	, NoSymbol  	] };	
+  key <AD03> { [	e     	, E    	, e         	, E         	] };	
   key <AD09> { [	o     	, O    	, odiaeresis	, Odiaeresis	] };	
                 	      	       	            	            	    	
   key <AC02> { [	s     	, S    	, ssharp    	, U1E9E     	] };	
-  key <AB06> { [	n     	, N    	, NoSymbol  	, NoSymbol  	] };	
-  key <AD04> { [	r     	, R    	, NoSymbol  	, NoSymbol  	] };	
-  key <AD05> { [	t     	, T    	, NoSymbol  	, NoSymbol  	] };	
-  key <AC03> { [	d     	, D    	, NoSymbol  	, NoSymbol  	] };	
+  key <AB06> { [	n     	, N    	, n         	, N         	] };	
+  key <AD04> { [	r     	, R    	, r         	, R         	] };	
+  key <AD05> { [	t     	, T    	, t         	, T         	] };	
+  key <AC03> { [	d     	, D    	, d         	, D         	] };	
 
   // bottom row
-  //               	normal   	, shift   	, mod3    	, mod3+shift	    	
-  // key <AE05> { [	5        	, percent 	, NoSymbol	, NoSymbol  	] };	
-  // key <AE08> { [	8        	, asterisk	, NoSymbol	, NoSymbol  	] };	
-  // key <AC10> { [	semicolon	, colon   	, NoSymbol	, NoSymbol  	] };	
-  key <AD10> { [   	p        	, P       	, NoSymbol	, NoSymbol  	] };	
-  key <AB01> { [   	z        	, Z       	, NoSymbol	, NoSymbol  	] };	
-                   	         	          	          	            	    	
-  key <AB05> { [   	b        	, B       	, NoSymbol	, NoSymbol  	] };	
-  key <AB07> { [   	m        	, M       	, NoSymbol	, NoSymbol  	] };	
-  key <AC07> { [   	j        	, J       	, NoSymbol	, NoSymbol  	] };	
-  key <AD06> { [   	y        	, Y       	, NoSymbol	, NoSymbol  	] };	
-  // key <AC10> { [	semicolon	, colon   	, NoSymbol	, NoSymbol  	] };	
+  //               	normal   	, shift   	, mod3     	, mod3+shift	    	
+  // key <AE05> { [	5        	, percent 	, 5        	, percent   	] };	
+  // key <AE08> { [	8        	, asterisk	, 8        	, asterisk  	] };	
+  // key <AC10> { [	semicolon	, colon   	, semicolon	, colon     	] };	
+  key <AD10> { [   	p        	, P       	, p        	, P         	] };	
+  key <AB01> { [   	z        	, Z       	, z        	, Z         	] };	
+                   	         	          	           	            	    	
+  key <AB05> { [   	b        	, B       	, b        	, B         	] };	
+  key <AB07> { [   	m        	, M       	, m        	, M         	] };	
+  key <AC07> { [   	j        	, J       	, j        	, J         	] };	
+  key <AD06> { [   	y        	, Y       	, y        	, Y         	] };	
+  // key <AC10> { [	semicolon	, colon   	, semicolon	, colon     	] };	
 
 };
