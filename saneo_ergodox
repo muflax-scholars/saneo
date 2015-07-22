@@ -1,106 +1,64 @@
 // saneo layout - putting the "sane" back into "neo" (<http://www.neo-layout.org>)
 
-partial alphanumeric_keys modifier_keys keypad_keys
+default partial alphanumeric_keys modifier_keys keypad_keys
 xkb_symbols "saneo" {
+  // we basically pretend to be a US qwerty keyboard
+  // that just happens to be arranged in a peculiar way.
+  include "us(basic)"
   name[Group1] = "saneo";
 
-  // some hacks for the ergodox until I can fix it better in hardware, or something
-
-  // modifier definitions
-  // --------------------
-
-  // definition of Mod3
-  key.type[Group1] = "THREE_LEVEL";
-  key <RTSH> { [	ISO_Level3_Latch	, ISO_Level3_Latch	, NoSymbol	] };	
-  modifier_map Mod5 { <RTSH> };
-
-  // define normal keys
+  // ...except for non-US keys, which we put on Mod3.
+  // we (unfortunately) re-define the normal keys too, but that's not a big deal.
+  // some keys are inherently redundant or shifted, and you shouldn't use those,
+  // which is why they're commented out
   // ------------------
 
-  key.type[Group1]="EIGHT_LEVEL_ALPHABETIC" ;
+  // definition of Mod3
+  key.type[Group1] = "FOUR_LEVEL";
+  key <RALT> { [	ISO_Level3_Latch	, ISO_Level3_Latch	, NoSymbol	, NoSymbol	] };	
+  modifier_map Mod5 { <RALT> };
 
-  // number row
-  //              	normal  	, shift   	, mod3    	, mod3+shift	, mod4    	, mod4+shift	, mod3+mod4	    	
-  # key <AE10> { [	0       	, NoSymbol	, NoSymbol	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
-                  	        	          	          	            	          	            	           	    	
-  key <AE01> { [  	1       	, NoSymbol	, NoSymbol	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
-  key <AE02> { [  	2       	, NoSymbol	, NoSymbol	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
-  key <AE03> { [  	3       	, NoSymbol	, NoSymbol	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
-  key <AE04> { [  	4       	, NoSymbol	, NoSymbol	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
-  key <AE05> { [  	5       	, NoSymbol	, NoSymbol	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
-                  	        	          	          	            	          	            	           	    	
-  # key <> { [    	6       	, NoSymbol	, NoSymbol	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
-                  	        	          	          	            	          	            	           	    	
-  # key <> { [    	6       	, NoSymbol	, NoSymbol	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
-                  	        	          	          	            	          	            	           	    	
-  key <AE06> { [  	6       	, NoSymbol	, NoSymbol	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
-  key <AE07> { [  	7       	, NoSymbol	, NoSymbol	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
-  key <AE08> { [  	8       	, NoSymbol	, NoSymbol	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
-  key <AE09> { [  	9       	, NoSymbol	, NoSymbol	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
-  key <AE10> { [  	0       	, NoSymbol	, NoSymbol	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
-                  	        	          	          	            	          	            	           	    	
-  # key <> { [    	NoSymbol	, NoSymbol	, NoSymbol	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
 
   // top row
-  //            	normal  	, shift   	, mod3        	, mod3+shift    	, mod4     	, mod4+shift	, mod3+mod4	    	
-  # key <> { [  	NoSymbol	, NoSymbol	, NoSymbol    	, NoSymbol      	, NoSymbol 	, NoSymbol  	, NoSymbol 	] };	
-                	        	          	              	                	           	            	           	    	
-  key <AD01> { [	x       	, X       	, asciitilde  	, U0281         	, Escape   	, Escape    	, NoSymbol 	] };	
-  key <AD02> { [	v       	, V       	, bracketleft 	, U03B2         	, BackSpace	, BackSpace 	, NoSymbol 	] };	
-  key <AD03> { [	l       	, L       	, apostrophe  	, U026B         	, Return   	, Return    	, NoSymbol 	] };	
-  key <AD04> { [	c       	, C       	, less        	, guillemotleft 	, Delete   	, Delete    	, NoSymbol 	] };	
-  key <AD05> { [	w       	, W       	, backslash   	, exclamdown    	, Insert   	, Insert    	, NoSymbol 	] };	
-                	        	          	              	                	           	            	           	    	
-  # key <> { [  	NoSymbol	, NoSymbol	, NoSymbol    	, NoSymbol      	, NoSymbol 	, NoSymbol  	, NoSymbol 	] };	
-                	        	          	              	                	           	            	           	    	
-  # key <> { [  	NoSymbol	, NoSymbol	, NoSymbol    	, NoSymbol      	, NoSymbol 	, NoSymbol  	, NoSymbol 	] };	
-                	        	          	              	                	           	            	           	    	
-  key <AD06> { [	k       	, K       	, equal       	, NoSymbol      	, NoSymbol 	, NoSymbol  	, NoSymbol 	] };	
-  key <AD07> { [	h       	, H       	, greater     	, guillemotright	, NoSymbol 	, NoSymbol  	, NoSymbol 	] };	
-  key <AD08> { [	g       	, G       	, quotedbl    	, U2E18         	, NoSymbol 	, NoSymbol  	, NoSymbol 	] };	
-  key <AD09> { [	f       	, F       	, bracketright	, U0278         	, NoSymbol 	, NoSymbol  	, NoSymbol 	] };	
-  key <AD10> { [	q       	, Q       	, grave       	, U0294         	, NoSymbol 	, NoSymbol  	, NoSymbol 	] };	
-                	        	          	              	                	           	            	           	    	
-  key <AD11> { [	ssharp  	, U1E9E   	, grave       	, NoSymbol      	, NoSymbol 	, NoSymbol  	, NoSymbol 	] };	
+  //            	normal	, shift	, mod3    	, mod3+shift	    	
+  key <AB02> { [	x     	, X    	, NoSymbol	, NoSymbol  	] };	
+  key <AB04> { [	v     	, V    	, NoSymbol	, NoSymbol  	] };	
+  key <AC09> { [	l     	, L    	, NoSymbol	, NoSymbol  	] };	
+  key <AB03> { [	c     	, C    	, NoSymbol	, NoSymbol  	] };	
+  key <AD02> { [	w     	, W    	, NoSymbol	, NoSymbol  	] };	
+                	      	       	          	            	    	
+  key <AC08> { [	k     	, K    	, NoSymbol	, NoSymbol  	] };	
+  key <AC06> { [	h     	, H    	, NoSymbol	, NoSymbol  	] };	
+  key <AC05> { [	g     	, G    	, NoSymbol	, NoSymbol  	] };	
+  key <AC04> { [	f     	, F    	, NoSymbol	, NoSymbol  	] };	
+  key <AD01> { [	q     	, Q    	, NoSymbol	, NoSymbol  	] };	
 
   // home row
-  //            	normal  	, shift   	, mod3      	, mod3+shift	, mod4    	, mod4+shift	, mod3+mod4	    	
-  # key <> { [  	NoSymbol	, NoSymbol	, NoSymbol  	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
-                	        	          	            	            	          	            	           	    	
-  key <AC01> { [	u       	, U       	, comma     	, U0259     	, Left    	, Left      	, NoSymbol 	] };	
-  key <AC02> { [	i       	, I       	, braceleft 	, U203D     	, Up      	, Up        	, NoSymbol 	] };	
-  key <AC03> { [	a       	, A       	, question  	, U00E6     	, Down    	, Down      	, NoSymbol 	] };	
-  key <AC04> { [	e       	, E       	, exclam    	, EuroSign  	, Right   	, Right     	, NoSymbol 	] };	
-  key <AC05> { [	o       	, O       	, parenleft 	, U00F8     	, Tab     	, Tab       	, NoSymbol 	] };	
-                	        	          	            	            	          	            	           	    	
-  key <AC06> { [	s       	, S       	, parenright	, U0283     	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
-  key <AC07> { [	n       	, N       	, underscore	, U014B     	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
-  key <AC08> { [	r       	, R       	, slash     	, U0279     	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
-  key <AC09> { [	t       	, T       	, braceright	, U03B8     	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
-  key <AC10> { [	d       	, D       	, period    	, U00B7     	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
-                	        	          	            	            	          	            	           	    	
-  # key <> { [  	NoSymbol	, NoSymbol	, NoSymbol  	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
+  //            	normal	, shift	, mod3      	, mod3+shift	    	
+  key <AD07> { [	u     	, U    	, udiaeresis	, Udiaeresis	] };	
+  key <AD08> { [	i     	, I    	, NoSymbol  	, NoSymbol  	] };	
+  key <AC01> { [	a     	, A    	, adiaeresis	, Adiaeresis	] };	
+  key <AD03> { [	e     	, E    	, NoSymbol  	, NoSymbol  	] };	
+  key <AD09> { [	o     	, O    	, odiaeresis	, Odiaeresis	] };	
+                	      	       	            	            	    	
+  key <AC02> { [	s     	, S    	, ssharp    	, U1E9E     	] };	
+  key <AB06> { [	n     	, N    	, NoSymbol  	, NoSymbol  	] };	
+  key <AD04> { [	r     	, R    	, NoSymbol  	, NoSymbol  	] };	
+  key <AD05> { [	t     	, T    	, NoSymbol  	, NoSymbol  	] };	
+  key <AC03> { [	d     	, D    	, NoSymbol  	, NoSymbol  	] };	
 
   // bottom row
-  //            	normal   	, shift      	, mod3       	, mod3+shift	, mod4    	, mod4+shift	, mod3+mod4	    	
-  # key <> { [  	NoSymbol 	, NoSymbol   	, NoSymbol   	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
-                	         	             	             	            	          	            	           	    	
-  key <AB01> { [	percent  	, grave      	, odiaeresis 	, Odiaeresis	, Home    	, Home      	, NoSymbol 	] };	
-  key <AB02> { [	asterisk 	, at         	, adiaeresis 	, Adiaeresis	, Prior   	, Prior     	, NoSymbol 	] };	
-  key <AB03> { [	colon    	, bar        	, udiaeresis 	, Udiaeresis	, Next    	, Next      	, NoSymbol 	] };	
-  key <AB04> { [	p        	, P          	, minus      	, sterling  	, End     	, End       	, NoSymbol 	] };	
-  key <AB05> { [	z        	, Z          	, at         	, U0292     	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
-                	         	             	             	            	          	            	           	    	
-  # key <> { [  	NoSymbol 	, NoSymbol   	, NoSymbol   	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
-                	         	             	             	            	          	            	           	    	
-  # key <> { [  	NoSymbol 	, NoSymbol   	, NoSymbol   	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
-                	         	             	             	            	          	            	           	    	
-  key <AB06> { [	b        	, B          	, plus       	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
-  key <AB07> { [	m        	, M          	, dollar     	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
-  key <AB08> { [	j        	, J          	, ampersand  	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
-  key <AB09> { [	y        	, Y          	, numbersign 	, yen       	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
-  key <AB10> { [	semicolon	, asciicircum	, asciicircum	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
-                	         	             	             	            	          	            	           	    	
-  # key <> { [  	NoSymbol 	, NoSymbol   	, NoSymbol   	, NoSymbol  	, NoSymbol	, NoSymbol  	, NoSymbol 	] };	
+  //               	normal   	, shift   	, mod3    	, mod3+shift	    	
+  // key <AE05> { [	5        	, percent 	, NoSymbol	, NoSymbol  	] };	
+  // key <AE08> { [	8        	, asterisk	, NoSymbol	, NoSymbol  	] };	
+  // key <AC10> { [	semicolon	, colon   	, NoSymbol	, NoSymbol  	] };	
+  key <AD10> { [   	p        	, P       	, NoSymbol	, NoSymbol  	] };	
+  key <AB01> { [   	z        	, Z       	, NoSymbol	, NoSymbol  	] };	
+                   	         	          	          	            	    	
+  key <AB05> { [   	b        	, B       	, NoSymbol	, NoSymbol  	] };	
+  key <AB07> { [   	m        	, M       	, NoSymbol	, NoSymbol  	] };	
+  key <AC07> { [   	j        	, J       	, NoSymbol	, NoSymbol  	] };	
+  key <AD06> { [   	y        	, Y       	, NoSymbol	, NoSymbol  	] };	
+  // key <AC10> { [	semicolon	, colon   	, NoSymbol	, NoSymbol  	] };	
 
 };
