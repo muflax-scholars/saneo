@@ -13,7 +13,7 @@ for id in $(xinput | ng "ErgoDox" | ng -o "id=\d+" | ng -o "\d+"); do
 done
 
 
-xset r rate 300 65
+# xset r rate 300 65
 if [[ $(hostname) == "azathoth" ]]; then
   xset m 1 2
 elif [[ $(hostname) == "scabeiathrax" ]]; then
