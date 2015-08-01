@@ -19,18 +19,18 @@ xkb_symbols "saneo" {
   modifier_map Mod5 { <RALT> };
 
   // top row
-  //            	normal	, Level3_Latchshift	, mod3	, mod3+shift	    	
-  key <AB02> { [	x     	, X                	, x   	, X         	] };	
-  key <AB04> { [	v     	, V                	, v   	, V         	] };	
-  key <AC09> { [	l     	, L                	, l   	, L         	] };	
-  key <AB03> { [	c     	, C                	, c   	, C         	] };	
-  key <AD02> { [	w     	, W                	, w   	, W         	] };	
-                	      	                   	      	            	    	
-  key <AC08> { [	k     	, K                	, k   	, K         	] };	
-  key <AC06> { [	h     	, H                	, h   	, H         	] };	
-  key <AC05> { [	g     	, G                	, g   	, G         	] };	
-  key <AC04> { [	f     	, F                	, f   	, F         	] };	
-  key <AD01> { [	q     	, Q                	, q   	, Q         	] };	
+  //            	normal	, Level3_Latchshift	, mod3          	, mod3+shift    	    	
+  key <AB02> { [	x     	, X                	, x             	, X             	] };	
+  key <AB04> { [	v     	, V                	, v             	, V             	] };	
+  key <AC09> { [	l     	, L                	, l             	, L             	] };	
+  key <AB03> { [	c     	, C                	, guillemotleft 	, guillemotleft 	] };	
+  key <AD02> { [	w     	, W                	, w             	, W             	] };	
+                	      	                   	                	                	    	
+  key <AC08> { [	k     	, K                	, k             	, K             	] };	
+  key <AC06> { [	h     	, H                	, guillemotright	, guillemotright	] };	
+  key <AC05> { [	g     	, G                	, g             	, G             	] };	
+  key <AC04> { [	f     	, F                	, f             	, F             	] };	
+  key <AD01> { [	q     	, Q                	, q             	, Q             	] };	
 
   // home row
   //            	normal	, shift	, mod3      	, mod3+shift	    	
